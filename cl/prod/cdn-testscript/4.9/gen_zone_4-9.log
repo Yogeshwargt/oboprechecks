@@ -1,0 +1,283 @@
+Wed Jun 13 15:07:23 CEST 2018
+$ORIGIN prod.cl.dmdsdp.com
+-e $TTL	3600	; 1 hour
+-e @	IN	SOA	prod.cl.dmdsdp.com. hostmaster.prod.cl.dmdsdp.com. (
+-e 			2018061301	; serial
+-e 			3600		; refresh (1 hour)
+-e 			300		; retry (5 minutes)
+-e 			3600000		; expire (1000 hours)
+-e 			3600		; minimum (1 hour)
+-e 			)
+
+-e 			IN	NS	ns01
+-e 			IN	TXT	"Change: this is the kit version of prod.cl.dmdsdp.com"
+
+-e ns01			IN	A	192.168.9.1
+-e ntp01			IN	A	192.168.9.1
+-e ntp02			IN	A	212.83.64.141
+-e dm			IN	A	127.0.0.1
+
+; ------ OBO-F5 VIPs >> domain=.prod.cl.dmdsdp.com
+ntp01                   IN      A       200.83.4.28
+ntp02                   IN      A       200.83.4.28
+dm                      IN      A       127.0.0.1
+obodrm                  IN      A       62.179.85.101
+obotraxis               IN      A       62.179.85.98
+oboqbr                  IN      A       62.179.85.99
+obomsg                  IN      A       62.179.80.33
+oboacs                  IN      A       62.179.85.97
+obousage                IN      A       213.46.235.102
+omwlogs                 IN      A       62.179.80.62
+oboxagget               IN      A       62.179.80.20
+omwcrash                IN      A       213.46.235.116
+
+; ------ OBO-CDN entries >> domain=prod.cl.dmdsdp.com
+omwssu                  IN      CNAME   wp-3301000000000000.id.cdn.vtrplay.com.
+omw                     IN      CNAME   wp-3201000000000000.id.cdn.vtrplay.com.
+epg                     IN      CNAME   wp-2f01000000000000.id.cdn.vtrplay.com.
+oboposter               IN      CNAME   wp-3001000000000000.id.cdn.vtrplay.com.
+speedtest               IN      CNAME   wp-3101000000000000.id.cdn.vtrplay.com.
+time                    IN      CNAME   wp-3601000000000000.id.cdn.vtrplay.com.
+thumbnail-service       IN      CNAME   wp-3501000000000000.id.cdn.vtrplay.com.
+
+; ------ OBO-CDN 4.8 entries >> domain=vtrprod.cdn.dmdsdp.com 
+staticqbr-cl-prod       IN      CNAME   wp-5f01000000000000.id.cdn.vtrplay.com.
+
+; ------ CDN NEW entries 4.8 >> domain=.vtrprod.cdn.dmdsdp.com
+wp1-pod1-vod-cl-prod    IN      CNAME   wp-5701000000000000.id.cdn.vtrplay.com.
+wp2-pod1-vod-cl-prod    IN      CNAME   wp-5801000000000000.id.cdn.vtrplay.com.
+wp3-pod1-vod-cl-prod    IN      CNAME   wp-5901000000000000.id.cdn.vtrplay.com.
+wp4-pod1-vod-cl-prod    IN      CNAME   wp-5a01000000000000.id.cdn.vtrplay.com.
+wp5-pod1-vod-cl-prod    IN      CNAME   wp-5b01000000000000.id.cdn.vtrplay.com.
+wp6-pod1-vod-cl-prod    IN      CNAME   wp-5c01000000000000.id.cdn.vtrplay.com.
+wp7-pod1-vod-cl-prod    IN      CNAME   wp-5d01000000000000.id.cdn.vtrplay.com.
+wp8-pod1-vod-cl-prod    IN      CNAME   wp-5e01000000000000.id.cdn.vtrplay.com.
+
+wp1-pod1-replay-cl-prod IN      CNAME   wp-4701000000000000.id.cdn.vtrplay.com.
+wp2-pod1-replay-cl-prod IN      CNAME   wp-4801000000000000.id.cdn.vtrplay.com.
+wp3-pod1-replay-cl-prod IN      CNAME   wp-4901000000000000.id.cdn.vtrplay.com.
+wp4-pod1-replay-cl-prod IN      CNAME   wp-4a01000000000000.id.cdn.vtrplay.com.
+wp5-pod1-replay-cl-prod IN      CNAME   wp-4b01000000000000.id.cdn.vtrplay.com.
+wp6-pod1-replay-cl-prod IN      CNAME   wp-4c01000000000000.id.cdn.vtrplay.com.
+wp7-pod1-replay-cl-prod IN      CNAME   wp-4d01000000000000.id.cdn.vtrplay.com.
+wp8-pod1-replay-cl-prod IN      CNAME   wp-4e01000000000000.id.cdn.vtrplay.com.
+
+wp1-pod1-dvrrb-cl-prod  IN      CNAME   wp-3f01000000000000.id.cdn.vtrplay.com.
+wp2-pod1-dvrrb-cl-prod  IN      CNAME   wp-4001000000000000.id.cdn.vtrplay.com.
+wp3-pod1-dvrrb-cl-prod  IN      CNAME   wp-4101000000000000.id.cdn.vtrplay.com.
+wp4-pod1-dvrrb-cl-prod  IN      CNAME   wp-4201000000000000.id.cdn.vtrplay.com.
+wp5-pod1-dvrrb-cl-prod  IN      CNAME   wp-4301000000000000.id.cdn.vtrplay.com.
+wp6-pod1-dvrrb-cl-prod  IN      CNAME   wp-4401000000000000.id.cdn.vtrplay.com.
+wp7-pod1-dvrrb-cl-prod  IN      CNAME   wp-4501000000000000.id.cdn.vtrplay.com.
+wp8-pod1-dvrrb-cl-prod  IN      CNAME   wp-4601000000000000.id.cdn.vtrplay.com.
+
+wp1-pod1-dvras-cl-prod  IN      CNAME   wp-3701000000000000.id.cdn.vtrplay.com.
+wp2-pod1-dvras-cl-prod  IN      CNAME   wp-3801000000000000.id.cdn.vtrplay.com.
+wp3-pod1-dvras-cl-prod  IN      CNAME   wp-3901000000000000.id.cdn.vtrplay.com.
+wp4-pod1-dvras-cl-prod  IN      CNAME   wp-3a01000000000000.id.cdn.vtrplay.com.
+wp5-pod1-dvras-cl-prod  IN      CNAME   wp-3b01000000000000.id.cdn.vtrplay.com.
+wp6-pod1-dvras-cl-prod  IN      CNAME   wp-3c01000000000000.id.cdn.vtrplay.com.
+wp7-pod1-dvras-cl-prod  IN      CNAME   wp-3d01000000000000.id.cdn.vtrplay.com.
+wp8-pod1-dvras-cl-prod  IN      CNAME   wp-3e01000000000000.id.cdn.vtrplay.com.
+
+wp1-pod1-review-cl-prod IN      CNAME   wp-4f01000000000000.id.cdn.vtrplay.com.
+wp2-pod1-review-cl-prod IN      CNAME   wp-5001000000000000.id.cdn.vtrplay.com.
+wp3-pod1-review-cl-prod IN      CNAME   wp-5101000000000000.id.cdn.vtrplay.com.
+wp4-pod1-review-cl-prod IN      CNAME   wp-5201000000000000.id.cdn.vtrplay.com.
+wp5-pod1-review-cl-prod IN      CNAME   wp-5301000000000000.id.cdn.vtrplay.com.
+wp6-pod1-review-cl-prod IN      CNAME   wp-5401000000000000.id.cdn.vtrplay.com.
+wp7-pod1-review-cl-prod IN      CNAME   wp-5501000000000000.id.cdn.vtrplay.com.
+wp8-pod1-review-cl-prod IN      CNAME   wp-5601000000000000.id.cdn.vtrplay.com.
+
+; ------ CDN NEW vxtoken >> domain=.vtrprod.cdn.dmdsdp.com
+wp1-pod1-vod-vxtoken-cl-prod IN      CNAME   wp-8001000000000000.id.cdn.vtrplay.com.
+wp2-pod1-vod-vxtoken-cl-prod IN      CNAME   wp-8101000000000000.id.cdn.vtrplay.com.
+wp3-pod1-vod-vxtoken-cl-prod IN      CNAME   wp-8201000000000000.id.cdn.vtrplay.com.
+wp4-pod1-vod-vxtoken-cl-prod IN      CNAME   wp-8301000000000000.id.cdn.vtrplay.com.
+wp5-pod1-vod-vxtoken-cl-prod IN      CNAME   wp-8401000000000000.id.cdn.vtrplay.com.
+wp6-pod1-vod-vxtoken-cl-prod IN      CNAME   wp-8501000000000000.id.cdn.vtrplay.com.
+wp7-pod1-vod-vxtoken-cl-prod IN      CNAME   wp-8601000000000000.id.cdn.vtrplay.com.
+wp8-pod1-vod-vxtoken-cl-prod IN      CNAME   wp-8701000000000000.id.cdn.vtrplay.com.
+
+wp1-pod1-replay-vxtoken-cl-prod IN      CNAME   wp-7001000000000000.id.cdn.vtrplay.com.
+wp2-pod1-replay-vxtoken-cl-prod IN      CNAME   wp-7101000000000000.id.cdn.vtrplay.com.
+wp3-pod1-replay-vxtoken-cl-prod IN      CNAME   wp-7201000000000000.id.cdn.vtrplay.com.
+wp4-pod1-replay-vxtoken-cl-prod IN      CNAME   wp-7301000000000000.id.cdn.vtrplay.com.
+wp5-pod1-replay-vxtoken-cl-prod IN      CNAME   wp-7401000000000000.id.cdn.vtrplay.com.
+wp6-pod1-replay-vxtoken-cl-prod IN      CNAME   wp-7501000000000000.id.cdn.vtrplay.com.
+wp7-pod1-replay-vxtoken-cl-prod IN      CNAME   wp-7601000000000000.id.cdn.vtrplay.com.
+wp8-pod1-replay-vxtoken-cl-prod IN      CNAME   wp-7701000000000000.id.cdn.vtrplay.com.
+
+wp1-pod1-dvrrb-vxtoken-cl-prod IN      CNAME   wp-6801000000000000.id.cdn.vtrplay.com.
+wp2-pod1-dvrrb-vxtoken-cl-prod IN      CNAME   wp-6901000000000000.id.cdn.vtrplay.com.
+wp3-pod1-dvrrb-vxtoken-cl-prod IN      CNAME   wp-6a01000000000000.id.cdn.vtrplay.com.
+wp4-pod1-dvrrb-vxtoken-cl-prod IN      CNAME   wp-6b01000000000000.id.cdn.vtrplay.com.
+wp5-pod1-dvrrb-vxtoken-cl-prod IN      CNAME   wp-6c01000000000000.id.cdn.vtrplay.com.
+wp6-pod1-dvrrb-vxtoken-cl-prod IN      CNAME   wp-6d01000000000000.id.cdn.vtrplay.com.
+wp7-pod1-dvrrb-vxtoken-cl-prod IN      CNAME   wp-6e01000000000000.id.cdn.vtrplay.com.
+wp8-pod1-dvrrb-vxtoken-cl-prod IN      CNAME   wp-6f01000000000000.id.cdn.vtrplay.com.
+
+wp1-pod1-dvras-vxtoken-cl-prod IN      CNAME   wp-6001000000000000.id.cdn.vtrplay.com.
+wp2-pod1-dvras-vxtoken-cl-prod IN      CNAME   wp-6101000000000000.id.cdn.vtrplay.com.
+wp3-pod1-dvras-vxtoken-cl-prod IN      CNAME   wp-6201000000000000.id.cdn.vtrplay.com.
+wp4-pod1-dvras-vxtoken-cl-prod IN      CNAME   wp-6301000000000000.id.cdn.vtrplay.com.
+wp5-pod1-dvras-vxtoken-cl-prod IN      CNAME   wp-6401000000000000.id.cdn.vtrplay.com.
+wp6-pod1-dvras-vxtoken-cl-prod IN      CNAME   wp-6501000000000000.id.cdn.vtrplay.com.
+wp7-pod1-dvras-vxtoken-cl-prod IN      CNAME   wp-6601000000000000.id.cdn.vtrplay.com.
+wp8-pod1-dvras-vxtoken-cl-prod IN      CNAME   wp-6701000000000000.id.cdn.vtrplay.com.
+
+wp1-pod1-review-vxtoken-cl-prod IN      CNAME   wp-7801000000000000.id.cdn.vtrplay.com.
+wp2-pod1-review-vxtoken-cl-prod IN      CNAME   wp-7901000000000000.id.cdn.vtrplay.com.
+wp3-pod1-review-vxtoken-cl-prod IN      CNAME   wp-7a01000000000000.id.cdn.vtrplay.com.
+wp4-pod1-review-vxtoken-cl-prod IN      CNAME   wp-7b01000000000000.id.cdn.vtrplay.com.
+wp5-pod1-review-vxtoken-cl-prod IN      CNAME   wp-7c01000000000000.id.cdn.vtrplay.com.
+wp6-pod1-review-vxtoken-cl-prod IN      CNAME   wp-7d01000000000000.id.cdn.vtrplay.com.
+wp7-pod1-review-vxtoken-cl-prod IN      CNAME   wp-7e01000000000000.id.cdn.vtrplay.com.
+wp8-pod1-review-vxtoken-cl-prod IN      CNAME   wp-7f01000000000000.id.cdn.vtrplay.com.
+
+; ------ CDN "old" entries used for playout >> domain=prod.cl.dmdsdp.com
+wp1.pod1.vod            IN      CNAME   wp-a300000000000000.id.cdn.vtrplay.com.
+wp2.pod1.vod            IN      CNAME   wp-a400000000000000.id.cdn.vtrplay.com.
+wp3.pod1.vod            IN      CNAME   wp-a500000000000000.id.cdn.vtrplay.com.
+wp4.pod1.vod            IN      CNAME   wp-a600000000000000.id.cdn.vtrplay.com.
+wp5.pod1.vod            IN      CNAME   wp-a700000000000000.id.cdn.vtrplay.com.
+wp6.pod1.vod            IN      CNAME   wp-a800000000000000.id.cdn.vtrplay.com.
+wp7.pod1.vod            IN      CNAME   wp-a900000000000000.id.cdn.vtrplay.com.
+wp8.pod1.vod            IN      CNAME   wp-aa00000000000000.id.cdn.vtrplay.com.
+wp9.pod1.vod            IN      CNAME   wp-ab00000000000000.id.cdn.vtrplay.com.
+wp10.pod1.vod           IN      CNAME   wp-ac00000000000000.id.cdn.vtrplay.com.
+wp11.pod1.vod           IN      CNAME   wp-ad00000000000000.id.cdn.vtrplay.com.
+wp12.pod1.vod           IN      CNAME   wp-ae00000000000000.id.cdn.vtrplay.com.
+wp13.pod1.vod           IN      CNAME   wp-af00000000000000.id.cdn.vtrplay.com.
+wp14.pod1.vod           IN      CNAME   wp-b000000000000000.id.cdn.vtrplay.com.
+wp15.pod1.vod           IN      CNAME   wp-b100000000000000.id.cdn.vtrplay.com.
+wp16.pod1.vod           IN      CNAME   wp-b200000000000000.id.cdn.vtrplay.com.
+wp17.pod1.vod           IN      CNAME   wp-b300000000000000.id.cdn.vtrplay.com.
+wp18.pod1.vod           IN      CNAME   wp-b400000000000000.id.cdn.vtrplay.com.
+wp19.pod1.vod           IN      CNAME   wp-b500000000000000.id.cdn.vtrplay.com.
+wp20.pod1.vod           IN      CNAME   wp-b600000000000000.id.cdn.vtrplay.com.
+wp21.pod1.vod           IN      CNAME   wp-b700000000000000.id.cdn.vtrplay.com.
+wp22.pod1.vod           IN      CNAME   wp-b800000000000000.id.cdn.vtrplay.com.
+wp23.pod1.vod           IN      CNAME   wp-b900000000000000.id.cdn.vtrplay.com.
+wp24.pod1.vod           IN      CNAME   wp-ba00000000000000.id.cdn.vtrplay.com.
+wp25.pod1.vod           IN      CNAME   wp-bb00000000000000.id.cdn.vtrplay.com.
+wp26.pod1.vod           IN      CNAME   wp-bc00000000000000.id.cdn.vtrplay.com.
+wp27.pod1.vod           IN      CNAME   wp-bd00000000000000.id.cdn.vtrplay.com.
+wp28.pod1.vod           IN      CNAME   wp-be00000000000000.id.cdn.vtrplay.com.
+
+wp1.pod1.replay         IN      CNAME   wp-bf00000000000000.id.cdn.vtrplay.com.
+wp2.pod1.replay         IN      CNAME   wp-c000000000000000.id.cdn.vtrplay.com.
+wp3.pod1.replay         IN      CNAME   wp-c100000000000000.id.cdn.vtrplay.com.
+wp4.pod1.replay         IN      CNAME   wp-c200000000000000.id.cdn.vtrplay.com.
+wp5.pod1.replay         IN      CNAME   wp-c300000000000000.id.cdn.vtrplay.com.
+wp6.pod1.replay         IN      CNAME   wp-c400000000000000.id.cdn.vtrplay.com.
+wp7.pod1.replay         IN      CNAME   wp-c500000000000000.id.cdn.vtrplay.com.
+wp8.pod1.replay         IN      CNAME   wp-c600000000000000.id.cdn.vtrplay.com.
+wp9.pod1.replay         IN      CNAME   wp-c700000000000000.id.cdn.vtrplay.com.
+wp10.pod1.replay        IN      CNAME   wp-c800000000000000.id.cdn.vtrplay.com.
+wp11.pod1.replay        IN      CNAME   wp-c900000000000000.id.cdn.vtrplay.com.
+wp12.pod1.replay        IN      CNAME   wp-ca00000000000000.id.cdn.vtrplay.com.
+wp13.pod1.replay        IN      CNAME   wp-cb00000000000000.id.cdn.vtrplay.com.
+wp14.pod1.replay        IN      CNAME   wp-cc00000000000000.id.cdn.vtrplay.com.
+wp15.pod1.replay        IN      CNAME   wp-cd00000000000000.id.cdn.vtrplay.com.
+wp16.pod1.replay        IN      CNAME   wp-ce00000000000000.id.cdn.vtrplay.com.
+wp17.pod1.replay        IN      CNAME   wp-cf00000000000000.id.cdn.vtrplay.com.
+wp18.pod1.replay        IN      CNAME   wp-d000000000000000.id.cdn.vtrplay.com.
+wp19.pod1.replay        IN      CNAME   wp-d100000000000000.id.cdn.vtrplay.com.
+wp20.pod1.replay        IN      CNAME   wp-d200000000000000.id.cdn.vtrplay.com.
+wp21.pod1.replay        IN      CNAME   wp-d300000000000000.id.cdn.vtrplay.com.
+wp22.pod1.replay        IN      CNAME   wp-d400000000000000.id.cdn.vtrplay.com.
+wp23.pod1.replay        IN      CNAME   wp-d500000000000000.id.cdn.vtrplay.com.
+wp24.pod1.replay        IN      CNAME   wp-d600000000000000.id.cdn.vtrplay.com.
+wp25.pod1.replay        IN      CNAME   wp-d700000000000000.id.cdn.vtrplay.com.
+wp26.pod1.replay        IN      CNAME   wp-d800000000000000.id.cdn.vtrplay.com.
+wp27.pod1.replay        IN      CNAME   wp-d900000000000000.id.cdn.vtrplay.com.
+wp28.pod1.replay        IN      CNAME   wp-da00000000000000.id.cdn.vtrplay.com.
+
+wp1.pod1.dvrrb          IN      CNAME   wp-db00000000000000.id.cdn.vtrplay.com.
+wp2.pod1.dvrrb          IN      CNAME   wp-dc00000000000000.id.cdn.vtrplay.com.
+wp3.pod1.dvrrb          IN      CNAME   wp-dd00000000000000.id.cdn.vtrplay.com.
+wp4.pod1.dvrrb          IN      CNAME   wp-de00000000000000.id.cdn.vtrplay.com.
+wp5.pod1.dvrrb          IN      CNAME   wp-df00000000000000.id.cdn.vtrplay.com.
+wp6.pod1.dvrrb          IN      CNAME   wp-e000000000000000.id.cdn.vtrplay.com.
+wp7.pod1.dvrrb          IN      CNAME   wp-e100000000000000.id.cdn.vtrplay.com.
+wp8.pod1.dvrrb          IN      CNAME   wp-e200000000000000.id.cdn.vtrplay.com.
+wp9.pod1.dvrrb          IN      CNAME   wp-e300000000000000.id.cdn.vtrplay.com.
+wp10.pod1.dvrrb         IN      CNAME   wp-e400000000000000.id.cdn.vtrplay.com.
+wp11.pod1.dvrrb         IN      CNAME   wp-e500000000000000.id.cdn.vtrplay.com.
+wp12.pod1.dvrrb         IN      CNAME   wp-e600000000000000.id.cdn.vtrplay.com.
+wp13.pod1.dvrrb         IN      CNAME   wp-e700000000000000.id.cdn.vtrplay.com.
+wp14.pod1.dvrrb         IN      CNAME   wp-e800000000000000.id.cdn.vtrplay.com.
+wp15.pod1.dvrrb         IN      CNAME   wp-e900000000000000.id.cdn.vtrplay.com.
+wp16.pod1.dvrrb         IN      CNAME   wp-ea00000000000000.id.cdn.vtrplay.com.
+wp17.pod1.dvrrb         IN      CNAME   wp-eb00000000000000.id.cdn.vtrplay.com.
+wp18.pod1.dvrrb         IN      CNAME   wp-ec00000000000000.id.cdn.vtrplay.com.
+wp19.pod1.dvrrb         IN      CNAME   wp-ed00000000000000.id.cdn.vtrplay.com.
+wp20.pod1.dvrrb         IN      CNAME   wp-ee00000000000000.id.cdn.vtrplay.com.
+wp21.pod1.dvrrb         IN      CNAME   wp-ef00000000000000.id.cdn.vtrplay.com.
+wp22.pod1.dvrrb         IN      CNAME   wp-f000000000000000.id.cdn.vtrplay.com.
+wp23.pod1.dvrrb         IN      CNAME   wp-f100000000000000.id.cdn.vtrplay.com.
+wp24.pod1.dvrrb         IN      CNAME   wp-f200000000000000.id.cdn.vtrplay.com.
+wp25.pod1.dvrrb         IN      CNAME   wp-f300000000000000.id.cdn.vtrplay.com.
+wp26.pod1.dvrrb         IN      CNAME   wp-f400000000000000.id.cdn.vtrplay.com.
+wp27.pod1.dvrrb         IN      CNAME   wp-f500000000000000.id.cdn.vtrplay.com.
+wp28.pod1.dvrrb         IN      CNAME   wp-f600000000000000.id.cdn.vtrplay.com.
+
+wp1.pod1.dvras          IN      CNAME   wp-f700000000000000.id.cdn.vtrplay.com.
+wp2.pod1.dvras          IN      CNAME   wp-f800000000000000.id.cdn.vtrplay.com.
+wp3.pod1.dvras          IN      CNAME   wp-f900000000000000.id.cdn.vtrplay.com.
+wp4.pod1.dvras          IN      CNAME   wp-fa00000000000000.id.cdn.vtrplay.com.
+wp5.pod1.dvras          IN      CNAME   wp-fb00000000000000.id.cdn.vtrplay.com.
+wp6.pod1.dvras          IN      CNAME   wp-fc00000000000000.id.cdn.vtrplay.com.
+wp7.pod1.dvras          IN      CNAME   wp-fd00000000000000.id.cdn.vtrplay.com.
+wp8.pod1.dvras          IN      CNAME   wp-fe00000000000000.id.cdn.vtrplay.com.
+wp9.pod1.dvras          IN      CNAME   wp-ff00000000000000.id.cdn.vtrplay.com.
+wp10.pod1.dvras         IN      CNAME   wp-0001000000000000.id.cdn.vtrplay.com.
+wp11.pod1.dvras         IN      CNAME   wp-0101000000000000.id.cdn.vtrplay.com.
+wp12.pod1.dvras         IN      CNAME   wp-0201000000000000.id.cdn.vtrplay.com.
+wp13.pod1.dvras         IN      CNAME   wp-0301000000000000.id.cdn.vtrplay.com.
+wp14.pod1.dvras         IN      CNAME   wp-0401000000000000.id.cdn.vtrplay.com.
+wp15.pod1.dvras         IN      CNAME   wp-0501000000000000.id.cdn.vtrplay.com.
+wp16.pod1.dvras         IN      CNAME   wp-0601000000000000.id.cdn.vtrplay.com.
+wp17.pod1.dvras         IN      CNAME   wp-0701000000000000.id.cdn.vtrplay.com.
+wp18.pod1.dvras         IN      CNAME   wp-0801000000000000.id.cdn.vtrplay.com.
+wp19.pod1.dvras         IN      CNAME   wp-0901000000000000.id.cdn.vtrplay.com.
+wp20.pod1.dvras         IN      CNAME   wp-0a01000000000000.id.cdn.vtrplay.com.
+wp21.pod1.dvras         IN      CNAME   wp-0b01000000000000.id.cdn.vtrplay.com.
+wp22.pod1.dvras         IN      CNAME   wp-0c01000000000000.id.cdn.vtrplay.com.
+wp23.pod1.dvras         IN      CNAME   wp-0d01000000000000.id.cdn.vtrplay.com.
+wp24.pod1.dvras         IN      CNAME   wp-0e01000000000000.id.cdn.vtrplay.com.
+wp25.pod1.dvras         IN      CNAME   wp-0f01000000000000.id.cdn.vtrplay.com.
+wp26.pod1.dvras         IN      CNAME   wp-1001000000000000.id.cdn.vtrplay.com.
+wp27.pod1.dvras         IN      CNAME   wp-1101000000000000.id.cdn.vtrplay.com.
+wp28.pod1.dvras         IN      CNAME   wp-1201000000000000.id.cdn.vtrplay.com.
+
+wp1.pod1.review         IN      CNAME   wp-1301000000000000.id.cdn.vtrplay.com.
+wp2.pod1.review         IN      CNAME   wp-1401000000000000.id.cdn.vtrplay.com.
+wp3.pod1.review         IN      CNAME   wp-1501000000000000.id.cdn.vtrplay.com.
+wp4.pod1.review         IN      CNAME   wp-1601000000000000.id.cdn.vtrplay.com.
+wp5.pod1.review         IN      CNAME   wp-1701000000000000.id.cdn.vtrplay.com.
+wp6.pod1.review         IN      CNAME   wp-1801000000000000.id.cdn.vtrplay.com.
+wp7.pod1.review         IN      CNAME   wp-1901000000000000.id.cdn.vtrplay.com.
+wp8.pod1.review         IN      CNAME   wp-1a01000000000000.id.cdn.vtrplay.com.
+wp9.pod1.review         IN      CNAME   wp-1b01000000000000.id.cdn.vtrplay.com.
+wp10.pod1.review        IN      CNAME   wp-1c01000000000000.id.cdn.vtrplay.com.
+wp11.pod1.review        IN      CNAME   wp-1d01000000000000.id.cdn.vtrplay.com.
+wp12.pod1.review        IN      CNAME   wp-1e01000000000000.id.cdn.vtrplay.com.
+wp13.pod1.review        IN      CNAME   wp-1f01000000000000.id.cdn.vtrplay.com.
+wp14.pod1.review        IN      CNAME   wp-2001000000000000.id.cdn.vtrplay.com.
+wp15.pod1.review        IN      CNAME   wp-2101000000000000.id.cdn.vtrplay.com.
+wp16.pod1.review        IN      CNAME   wp-2201000000000000.id.cdn.vtrplay.com.
+wp17.pod1.review        IN      CNAME   wp-2301000000000000.id.cdn.vtrplay.com.
+wp18.pod1.review        IN      CNAME   wp-2401000000000000.id.cdn.vtrplay.com.
+wp19.pod1.review        IN      CNAME   wp-2501000000000000.id.cdn.vtrplay.com.
+wp20.pod1.review        IN      CNAME   wp-2601000000000000.id.cdn.vtrplay.com.
+wp21.pod1.review        IN      CNAME   wp-2701000000000000.id.cdn.vtrplay.com.
+wp22.pod1.review        IN      CNAME   wp-2801000000000000.id.cdn.vtrplay.com.
+wp23.pod1.review        IN      CNAME   wp-2901000000000000.id.cdn.vtrplay.com.
+wp24.pod1.review        IN      CNAME   wp-2a01000000000000.id.cdn.vtrplay.com.
+wp25.pod1.review        IN      CNAME   wp-2b01000000000000.id.cdn.vtrplay.com.
+wp26.pod1.review        IN      CNAME   wp-2c01000000000000.id.cdn.vtrplay.com.
+wp27.pod1.review        IN      CNAME   wp-2d01000000000000.id.cdn.vtrplay.com.
+wp28.pod1.review        IN      CNAME   wp-2e01000000000000.id.cdn.vtrplay.com.
+

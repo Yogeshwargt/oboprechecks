@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TVAMain xmlns="urn:tva:metadata:2010" xmlns:mpeg7="urn:tva:mpeg7:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xml:lang="es" xsi:schemaLocation="urn:tva:metadata:2010 http://www.broadcastingdata.com/dataimport/tva/tva1.6/tva_metadata_3-1_v161.xsd">
+  <ProgramDescription>
+    <GroupInformationTable>
+      <GroupInformation groupId="crid://vtr.tv/CL_LTVProduct_100031">
+        <GroupType xsi:type="ProgramGroupTypeType" value="otherCollection"/>
+        <BasicDescription>
+          <Title xml:lang="es" type="main">CL_LTVProduct_100031</Title>
+          <Synopsis xml:lang="es" length="short">Product for lineal channel - Product ID_100031</Synopsis>
+          <Genre type="other" href="urn:eventis:metadata:cs:GroupTypeCS:2010:product"/>
+          <PurchaseList>
+            <PurchaseItem>
+              <Price currency="CLP">0</Price>
+              <Purchase>
+                <PurchaseType href="urn:eventis:metadata:cs:PurchaseTypeCS:2010:opportunity.subscription">
+                  <Name xml:lang="es">CL_Offer_100031</Name>
+                </PurchaseType>
+              </Purchase>
+            </PurchaseItem>
+          </PurchaseList>
+        </BasicDescription>
+        <OtherIdentifier type="EdsProductId" organization="eventis" authority="eventis">100031</OtherIdentifier>
+      </GroupInformation>
+    </GroupInformationTable>
+  </ProgramDescription>
+</TVAMain>

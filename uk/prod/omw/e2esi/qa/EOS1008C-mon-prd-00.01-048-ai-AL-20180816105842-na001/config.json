@@ -1,0 +1,972 @@
+{
+	"app": {
+		"CGMSAMode": "disabled",
+		"FirstRepeatInterval": 400,
+		"SubsequentRepeatInterval": 150,
+		"UHDBillingThreshold": 30,
+		"animationEOS": false,
+		"appsBackendPath": "https://widgets.metrological.com/2/store-version/liberty/uk/omw-eos-staging",
+		"appsCataloguePath": "https://cdn.metrological.com/apps/2/${hash}?version=${version}&language=${lang}",
+		"appsPopularPath": "apps/${hash}/popular-apps",
+		"bookmarkUpdateInterval": 0,
+		"canConfigureNetwork": true,
+		"channelBarPreloadWindowLeftDays": 1,
+		"channelBarPreloadWindowRightDays": 1,
+		"comboEpisodePicker": true,
+		"contextualMainMenu": true,
+		"continueWatchingCachingTime": 60000,
+		"continueWatchingDataSource": "SERVICE",
+		"continueWatchingTabVisibility": true,
+		"ctxmmAppsCachingTime": 240,
+		"ctxmmOnDemandCachingTime": 30,
+		"ctxmmSearchCachingTime": 1440,
+		"defaultChannelLCN": 100,
+		"epgPreloadWindowLeftDays": 7,
+		"epgPreloadWindowRightDays": 14,
+		"hasReplayCatalogue": true,
+		"imageScrubber": true,
+		"isASpotEnabled": false,
+		"isClosedCaptionsEnabled": false,
+		"isRadioPortalEnabled": true,
+		"isReplayOptInRequired": false,
+		"isShowingFutureReplayEnabled": true,
+		"isTeletextAllowed": true,
+		"isTipsAndTricksEnabled": true,
+		"macrovisionMode": "None",
+		"mapNgBackendPath": "v2/",
+		"metroBootPath": "https://widgets.metrological.com/liberty/uk/omw-eos-staging#boot",
+		"minimumUHDSessionDuration": 120,
+		"originalAudioLanguages": ["ina", "gos", "fma", "mul", "mis", "qaa", "und"],
+		"preferredDisplayResolutions": ["2160p50", "2160p", "1080p50", "1080p", "1080i50", "1080i", "720p50", "720p", "576p50", "576p", "576i50", "576i"],
+		"preferredLanguages": ["en"],
+		"profilesFeatureAvailability": false,
+		"profilesFeatureDataSource": "SERVICE",
+		"providersCollection": true,
+		"radioBackgroundImage": "https://staticqbr-uk-prod.prod.cdn.dmdsdp.com/image-service/ImagesEPG/EventImages/RADIO-APP-background.png",
+		"radioTileImage": "https://staticqbr-uk-prod.prod.cdn.dmdsdp.com/image-service/ImagesEPG/EventImages/RADIO-APP-CTXMM.png",
+		"recentlyUsedAppsMaxChars": 2000,
+		"showGridEntryTileCounter": true,
+		"showWebFeedRecommendation": true,
+		"shutdownVoiceCommandConfidenceThreshold": 0.85,
+		"tuningNotificationDelayTime": 600000,
+		"useFeatureFlagsUI": true,
+		"useNewDiagnosticsUI": true,
+		"vodRootStrucutre": "omw_hzn4_vod",
+		"youthProtectionSchema": null
+	},
+	"apps": {
+		"mapping": {
+			"netflix": "com.libertyglobal.app.netflix",
+			"youtube": "com.libertyglobal.app.youtube"
+		}
+	},
+	"appservices": {
+		"auth": {
+			"maxPinAttempts": 3,
+			"pinSuspensionTimeout": 900
+		},
+		"channels": {
+			"maxRecentChannels": 7,
+			"mostWatched": {
+				"expirationTime": 604800,
+				"maxCount": 0,
+				"minZapTime": 5000
+			},
+			"renewalIntervalHours": 1,
+			"startTimeoutRangeMinutes": 10
+		},
+		"connectivity": {
+			"dnsCheckIntervalMs": 10000,
+			"domains": ["dm.prod.uk.dmdsdp.com"],
+			"resolves": ["127.0.0.1"]
+		},
+		"connectivityMode": "auto",
+		"epg": {
+			"getDetailedEventsUsesMemoryCache": true,
+			"languageChangeDelayMs": 3000,
+			"maxIndexAgeDays": 7,
+			"maxLookupLeftDays": 7,
+			"maxLookupRightDays": 14,
+			"maxParallelRemoteRequests": 3,
+			"memoryCache": {
+				"channelsChunkSize": 20,
+				"detailedEvents": {
+					"maxEventsCount": 1000,
+					"preloadDelayMs": 500,
+					"preloadMarginChannels": 5,
+					"preloadMarginTimeHours": 2
+				},
+				"events": {
+					"maxEventsCount": 10000,
+					"preloadWindowLeftHours": 3,
+					"preloadWindowRightHours": 5,
+					"timeFrameDurationHours": 2,
+					"updateIntervalMinutes": 30
+				}
+			},
+			"storageCache": {
+				"detailedEvents": {
+					"enabled": true,
+					"preloadWindowLeftDays": 7,
+					"preloadWindowRightDays": 14
+				},
+				"events": {
+					"enabled": true,
+					"preloadWindowLeftDays": 7,
+					"preloadWindowRightDays": 14,
+					"storeWindowLeftDays": 7
+				},
+				"maxRandomPreloadDelay": 300,
+				"timeFrameDurationHours": 24,
+				"updateIntervalMinutes": 5
+			}
+		},
+		"maintenanceWakeup": {
+			"fixedStarts": [120],
+			"inactivityTimeout": 1320,
+			"randomDelay": 180,
+			"wakeupDuration": 60
+		},
+		"pvr": {
+			"autoDelete": {
+				"enabled": false,
+				"priorities": ["P1", "P2", "P3"],
+				"rules": [{
+						"age": 5,
+						"isSeries": true,
+						"isWatched": true,
+						"priority": "P1"
+					}, {
+						"age": 14,
+						"isSeries": true,
+						"isWatched": false,
+						"priority": "P2"
+					}, {
+						"age": 10,
+						"isSeries": false,
+						"isWatched": true,
+						"priority": "P2"
+					}, {
+						"age": 30,
+						"isSeries": false,
+						"isWatched": false,
+						"priority": "P3"
+					}
+				]
+			},
+			"autoDeleteFailedRecordings": 172800,
+			"diskSpaceMonitoringInterval": 60,
+			"series": {
+				"followingRange": 864000,
+				"interval": 86400,
+				"precedingRange": 432000
+			},
+			"tsbReservedSpace": 22500,
+			"warmupDuration": 60
+		},
+		"traxis": {
+			"connectionTimeout": 30
+		},
+		"upgradeManager": {
+			"deviceImageType": "debug",
+			"deviceName": "cpeFirmware",
+			"devices": [],
+			"idleStateDelayMinutes": 10,
+			"idleStateMaxWaitHours": 8,
+			"upgradeForcedAfterDays": 14,
+			"upgradeProcessDurationMinutes": 5
+		},
+		"usageCollector": {
+			"anonymizeData": true,
+			"flushInterval": 300,
+			"maxBufferSizeKB": 5,
+			"maxBuffersStored": 15,
+			"removeNewestBuffersOnMaxReached": false
+		},
+		"usePersonalizationService": false
+	},
+	"channelBoundApps": [{
+			"applogo": "https://staticqbr-uk-prod.prod.cdn.dmdsdp.com/image-service/ImagesEPG/EventImages/netflix_cb_background.png",
+			"channelbound": [999],
+			"deeplink": "/App/Netflix",
+			"delay": 2
+		}
+	],
+	"cloud": {
+		"continue-watching-service": "http://localhost:81/continue-watching-service/continue-watching-service/",
+		"crash-dump": "http://localhost:81/crash-dump/crash/",
+		"customer-communication-service": "http://localhost:81/customer-communication-service/customer-communication-service/",
+		"discovery-service": "http://localhost:81/discovery-service/discovery-service/",
+		"drm": "http://localhost:81/drm/*/",
+		"epg-service": "https://epg.prod.uk.dmdsdp.com/",
+		"mapng": "http://localhost:81/mapng/vod-service/",
+		"mqtt": "ws://localhost:82/mqtt/mqtt",
+		"ncs": "ws://localhost:82/ncs/",
+		"ntp": ["ntp01.prod.uk.dmdsdp.com", "ntp02.prod.uk.dmdsdp.com"],
+		"personalization-service": "http://localhost:81/personalization-service/personalization-service/",
+		"purchase-service": "http://localhost:81/purchase-service/purchase-service/",
+		"qcs": "http://localhost:81/qcs/",
+		"recommendations-webfeed": "http://localhost:81/recommendations-webfeed/api/2.0/",
+		"recording-service": "http://localhost:81/recording-service/recording-service/",
+		"remote-log": null,
+		"replay-catalog-service": "http://localhost:81/replay-catalog-service/replay-catalog-service/",
+		"session-service": "http://localhost:81/session-service/session-service/",
+		"ssu": "https://dawnssu.dmdsdp.com",
+		"time": ["https://time.prod.uk.dmdsdp.com/"],
+		"traxis": "http://localhost:81/traxis/",
+		"usage-collector-service": "http://localhost:81/usage-collector-service/"
+	},
+	"compatibility": {
+		"appModules": "1.0.1",
+		"appModulesUrl": "dawnssu.dmdsdp.com/onemw/eos/AppModulesPkg/v1.0.1",
+		"firmwareAppModules": [{
+				"name": "AppServices",
+				"version": "145_20170106210000_master_eos"
+			}, {
+				"name": "FTI",
+				"version": "145_20170106210000_master_eos"
+			}
+		],
+		"firmwares": ["10.13.2.DVR", "10.13.3.DVR"],
+		"version": "EOS1008C-mon-prd-00.01-048-ah-AL-20180802000833-na001_v1"
+	},
+	"cpe": {
+		"country": "gb",
+		"timezone": "Europe/London"
+	},
+	"crashDump": {
+		"enabled": true,
+		"maxDumps": 10,
+		"maxSendAttempts": 10
+	},
+	"dial": {
+		"authorizedDomains": {
+			"/apps/Netflix/dial_data": ["www.netflix.com", "www4.netflix.com"],
+			"/apps/YouTube/dial_data": ["www.youtube.com"]
+		}
+	},
+	"discoveryService": {
+		"minWatchedLPVR": 600,
+		"minWatchedLTV": 600,
+		"minWatchedNPVR": 600,
+		"minWatchedReplay": 600,
+		"minWatchedVOD": 600
+	},
+	"fp": {
+		"display": "none",
+		"indicators": {
+			"BO_CONNECTED": {
+				"id": 1,
+				"state": "OFF"
+			},
+			"COLD_STANDBY": {
+				"id": 0,
+				"state": "OFF"
+			},
+			"CONNECTIVITY_OFF": {
+				"id": 1,
+				"state": "OFF"
+			},
+			"HOT_STANDBY": {
+				"brightness": 20,
+				"color": [60, 100, 60],
+				"id": 0,
+				"state": "ON"
+			},
+			"IP_ACQUIRED": {
+				"brightness": 100,
+				"color": [100, 40, 0],
+				"id": 1,
+				"interval": 500,
+				"state": "BLINK"
+			},
+			"NO_IP": {
+				"brightness": 100,
+				"color": [100, 0, 0],
+				"id": 1,
+				"state": "ON"
+			},
+			"POWER_OFF": {
+				"id": 0,
+				"state": "OFF"
+			},
+			"POWER_ON": {
+				"brightness": 100,
+				"color": [60, 100, 60],
+				"id": 0,
+				"state": "ON"
+			},
+			"RCU_COMMAND": {
+				"id": 0,
+				"interval": 500,
+				"state": "BLINK_ONCE"
+			},
+			"WIFI_CONNECTED": {
+				"id": 2,
+				"state": "OFF"
+			},
+			"WIFI_ERROR": {
+				"brightness": 100,
+				"color": [100, 0, 0],
+				"id": 2,
+				"state": "ON"
+			},
+			"WIFI_OFF": {
+				"id": 2,
+				"state": "OFF"
+			},
+			"WIFI_WPS_ERROR": {
+				"brightness": 100,
+				"color": [100, 0, 0],
+				"id": 2,
+				"state": "ON"
+			},
+			"WIFI_WPS_PROGRESS": {
+				"brightness": 100,
+				"color": [0, 204, 0],
+				"id": 2,
+				"interval": 1000,
+				"state": "BLINK"
+			},
+			"WIFI_WPS_SES_OVERLAP": {
+				"brightness": 100,
+				"color": [100, 0, 0],
+				"id": 2,
+				"interval": 1000,
+				"state": "BLINK"
+			},
+			"WIFI_WPS_SUCCESS": {
+				"brightness": 100,
+				"color": [0, 204, 0],
+				"id": 2,
+				"state": "ON"
+			}
+		}
+	},
+	"fsmaintainer": {
+		"hddWhitelist": [],
+		"quotaLimits": {
+			"/mnt/app_cache": 35,
+			"/mnt/app_img_cache": 100,
+			"/mnt/app_modules": 20,
+			"/mnt/app_services": 6,
+			"/mnt/drm_storage": 2,
+			"/mnt/epg_cache": 120,
+			"/mnt/logging": 110,
+			"/mnt/nagra_storage": 1,
+			"/mnt/netflix_media_cache": 64,
+			"/mnt/secure_storage": 3,
+			"/mnt/thumbnail_cache": 12
+		}
+	},
+	"ftiApp": {
+		"screensToSkip": ["languageSelection", "network"],
+		"welcomeVideo": null
+	},
+	"ipplayer": {
+		"drmSession": {
+			"crmId": "lgiuk"
+		},
+		"userAgent": "LIBGLO-EOSSTB-000000000000"
+	},
+	"log": {
+		"components": {
+			"APPSERVICES": {
+				"defaultLogLevel": "emerg"
+			},
+			"JSAPP": {
+				"defaultLogLevel": "emerg"
+			},
+			"NEXUS": {
+				"defaultLogLevel": "none"
+			},
+			"NGINX": {
+				"defaultLogLevel": "emerg"
+			},
+			"RDK": {
+				"defaultLogLevel": "emerg"
+			},
+			"SYSTEMD": {
+				"defaultLogLevel": "emerg"
+			}
+		},
+		"enabled": false,
+		"maxFiles": 11,
+		"maxLevelStore": "emerg",
+		"sizeLimit": 10000,
+		"storage": "volatile"
+	},
+	"ncscredentials": {
+		"appKey": "e4b6dd3d2dc725a2ec828585af478c94969902d4b0156a7222c3703627da350b901248bdd96d60c6f0e54b9f2cd733c2703596204b01936dc403a3ebddd8f66d",
+		"nmaid": "LGI_PROD_UK_VIRGIN_20170125142723",
+		"supportedUiLanguages": [{
+				"languageCode": "en",
+				"supportedDialects": [{
+						"contextTag": "UK_Prod_Virgin_Media",
+						"languageCode": "eng-GBR"
+					}
+				]
+			}
+		]
+	},
+	"pvr": {
+		"cacheInterval": 86400,
+		"fpa": false,
+		"recordingMode": "local",
+		"retention": {
+			"default": true,
+			"period": 60
+		},
+		"storage": "REVIEW_BUFFER",
+		"timeshiftDelay": 5,
+		"timeshiftLength": 90,
+		"timeshiftLengthHD": 125,
+		"timeshiftLengthSD": 282,
+		"timeshiftMode": "ramCloud"
+	},
+	"reverseProxy": {
+		"continue-watching-service": {
+			"fqdn": "oboqbr.prod.uk.dmdsdp.com"
+		},
+		"crash-dump": {
+			"fqdn": "omwcrash.prod.uk.dmdsdp.com"
+		},
+		"customer-communication-service": {
+			"fqdn": "staticqbr-uk-prod.prod.cdn.dmdsdp.com",
+			"trusted_cas": "ca-bundle.crt"
+		},
+		"discovery-service": {
+			"fqdn": "oboqbr.prod.uk.dmdsdp.com"
+		},
+		"drm/obodrm.prod.uk.dmdsdp.com": {
+			"fqdn": "obodrm.prod.uk.dmdsdp.com",
+			"protocol": "https"
+		},
+                "drm/obodrm.prod.pe.dmdsdp.com": {
+                        "protocol": "https",
+                        "fqdn": "obodrm.prod.pe.dmdsdp.com"
+                },
+		"mapng": {
+			"fqdn": "oboqbr.prod.uk.dmdsdp.com"
+		},
+		"mqtt": {
+			"fqdn": "obomsg.prod.uk.dmdsdp.com",
+			"protocol": "wss"
+		},
+		"ncs/eng-GBR": {
+			"fqdn": "ws.dev.nuance.com",
+			"protocol": "wss",
+			"trusted_cas": "ca-bundle.crt"
+		},
+		"personalization-service": {
+			"fqdn": "oboqbr.prod.uk.dmdsdp.com"
+		},
+		"purchase-service": {
+			"fqdn": "oboqbr.prod.uk.dmdsdp.com"
+		},
+		"qcs": {
+			"fqdn": "www.ueiwsp.com",
+			"trusted_cas": "ca-bundle.crt"
+		},
+		"recommendations-webfeed": {
+			"fqdn": "prd-lgi-api.frequency.com",
+			"trusted_cas": "ca-bundle.crt"
+		},
+		"recording-service": {
+			"fqdn": "oboqbr.prod.uk.dmdsdp.com"
+		},
+		"replay-catalog-service": {
+			"fqdn": "oboqbr.prod.uk.dmdsdp.com"
+		},
+		"session-service": {
+			"fqdn": "oboqbr.prod.uk.dmdsdp.com"
+		},
+		"traxis": {
+			"fqdn": "obotraxis.prod.uk.dmdsdp.com"
+		},
+		"usage-collector-service": {
+			"fqdn": "obousage.prod.uk.dmdsdp.com"
+		}
+	},
+	"sessionManager": {
+		"conflictmgr": {
+			"resource": {
+				"fcc": 3,
+				"hdrw": 2,
+				"playback_main": 1,
+				"playback_pip": 0,
+				"recorder": 1,
+				"streamer": 0,
+				"tuner": 4
+			},
+			"session": {
+				"DvrPlaybackMain": {
+					"onfail": "notify",
+					"priority": 0,
+					"uses": ["hdrw", "playback_main"]
+				},
+				"DvrPlaybackPIP": {
+					"onfail": "notify",
+					"priority": 20,
+					"uses": ["hdrw", "playback_pip"]
+				},
+				"DvrStreaming": {
+					"onfail": "notify",
+					"priority": 10,
+					"uses": ["hdrw", "streamer"]
+				},
+				"LivePlaybackFcc": {
+					"onfail": "none",
+					"priority": 30,
+					"uses": ["tuner", "fcc"]
+				},
+				"LivePlaybackMain": {
+					"onfail": "notify",
+					"priority": 0,
+					"uses": ["tuner", "hdrw", "playback_main"]
+				},
+				"LivePlaybackPIP": {
+					"onfail": "notify",
+					"priority": 20,
+					"uses": ["tuner", "playback_pip"]
+				},
+				"LiveStreaming": {
+					"onfail": "notify",
+					"priority": 10,
+					"uses": ["tuner", "streamer"]
+				},
+				"Recording": {
+					"onfail": "notify",
+					"priority": 1,
+					"uses": ["tuner", "hdrw", "recorder"]
+				}
+			}
+		}
+	},
+	"settings": {
+		"cpe.16by9Handling": {
+			"default": "Letterbox",
+			"enum": ["FullScreen", "Letterbox", "PanScan"],
+			"type": "string"
+		},
+		"cpe.4by3Handling": {
+			"default": "PillarBox",
+			"enum": ["FullMode", "PillarBox", "ZoomMode"],
+			"type": "string"
+		},
+		"cpe.aspectRatio": {
+			"default": "16:9",
+			"enum": ["16:9", "4:3"],
+			"type": "string"
+		},
+		"cpe.audioDolbyDigital": {
+			"default": true,
+			"type": "boolean"
+		},
+		"cpe.autoStandby": {
+			"default": 240,
+			"description": "Values are in minutes",
+			"enum": [0, 120, 240, 360],
+			"type": "number"
+		},
+		"cpe.autoTvStartup": {
+			"default": false,
+			"type": "boolean"
+		},
+		"cpe.ccAnalogService": {
+			"default": "CC1",
+			"enum": ["CC1", "CC2", "CC3", "CC4", "Text1", "Text2", "Text3", "Text4"],
+			"type": "string"
+		},
+		"cpe.ccDigitalService": {
+			"default": "Primary",
+			"enum": ["Primary", "Secondary", "S3", "S4", "S5", "S6"],
+			"type": "string"
+		},
+		"cpe.ccsMessages": {
+			"default": [],
+			"items": {
+				"type": "string"
+			},
+			"type": "array"
+		},
+		"cpe.defaultProfileId": {
+			"default": "",
+			"type": "string"
+		},
+		"cpe.enableCEC": {
+			"default": true,
+			"type": "boolean"
+		},
+		"cpe.factoryResetState": {
+			"default": "initial",
+			"enum": ["initial", "started", "succeeded", "failed"],
+			"type": "string"
+		},
+		"cpe.friendlyName": {
+			"default": "Virgin TV",
+			"type": "string"
+		},
+		"cpe.hdmiResolution": {
+			"default": "FromTv",
+			"enum": ["FromTv", "4K", "1080p", "1080i", "720p", "576p"],
+			"type": "string"
+		},
+		"cpe.primaryVideoOutput": {
+			"default": "HDMI",
+			"enum": ["HDMI", "SCART"],
+			"type": "string"
+		},
+		"cpe.quicksetPairedDevicesInfo": {
+			"additionalProperties": false,
+			"default": null,
+			"properties": {
+				"amp": {
+					"additionalProperties": false,
+					"properties": {
+						"brand": {
+							"description": "Brand of the amplifier discovered / selected by user during setup.",
+							"type": "string"
+						},
+						"cecCmdDataInputSelect": {
+							"description": "RAW CEC command data corresponding to input select.",
+							"type": "string"
+						},
+						"cecCmdDataPowerOff": {
+							"description": "RAW CEC command data corresponding to power off.",
+							"type": "string"
+						},
+						"cecCmdDataPowerOn": {
+							"description": "RAW CEC command data corresponding to power on.",
+							"type": "string"
+						},
+						"codeset": {
+							"description": "codeset that is automatically discovered or figured out using the wizard if any and programmed to RCU.",
+							"type": "string"
+						},
+						"controlRule": {
+							"description": "control rule in base64 format that is automatically discovered and programmed to RCU.",
+							"type": "string"
+						},
+						"discreteCodeset": {
+							"description": "discrete codeset that is automatically discovered and programmed to RCU.",
+							"type": "string"
+						},
+						"isPaired": {
+							"description": "Flag to indicate if device has been paired to RCU or not. ",
+							"type": "boolean"
+						},
+						"model": {
+							"description": "Model of the amplifier discovered / selected by user during setup.",
+							"type": "string"
+						},
+						"osd": {
+							"description": "osd value discovered through CEC ping mechanism.",
+							"type": "string"
+						},
+						"pairingMethod": {
+							"description": "String to indicate how pairing was performed. Expected values are automatic and manual.",
+							"type": "string"
+						},
+						"vendorId": {
+							"description": "Vendor ID discovered through CEC ping mechanism.",
+							"type": "string"
+						}
+					},
+					"required": ["brand", "model", "vendorId", "osd", "codeset", "discreteCodeset", "controlRule", "cecCmdDataPowerOn", "cecCmdDataPowerOff", "cecCmdDataInputSelect", "isPaired", "pairingMethod"],
+					"title": "Amplifier device schema.",
+					"type": "object"
+				},
+				"edid": {
+					"description": "EDID in base64 format of the device connected through HDMI.",
+					"type": "string"
+				},
+				"physicalAddress": {
+					"description": "Host device physical address.",
+					"type": "string"
+				},
+				"tv": {
+					"additionalProperties": false,
+					"properties": {
+						"brand": {
+							"description": "Brand of the TV discovered / selected by user during setup.",
+							"type": "string"
+						},
+						"cecCmdDataInputSelect": {
+							"description": "RAW CEC command data corresponding to input select.",
+							"type": "string"
+						},
+						"cecCmdDataPowerOff": {
+							"description": "RAW CEC command data corresponding to power off.",
+							"type": "string"
+						},
+						"cecCmdDataPowerOn": {
+							"description": "RAW CEC command data corresponding to power on.",
+							"type": "string"
+						},
+						"codeset": {
+							"description": "codeset that is automatically discovered or figured out using the wizard if any and programmed to RCU.",
+							"type": "string"
+						},
+						"controlRule": {
+							"description": "control rule in base64 format that is automatically discovered and programmed to RCU.",
+							"type": "string"
+						},
+						"discreteCodeset": {
+							"description": "discrete codeset that is automatically discovered and programmed to RCU.",
+							"type": "string"
+						},
+						"isPaired": {
+							"description": "Flag to indicate if device has been paired to RCU or not. ",
+							"type": "boolean"
+						},
+						"model": {
+							"description": "Model of the TV discovered / selected by user during setup.",
+							"type": "string"
+						},
+						"osd": {
+							"description": "osd value discovered through CEC ping mechanism.",
+							"type": "string"
+						},
+						"pairingMethod": {
+							"description": "String to indicate how pairing was performed. Expected values are automatic and manual.",
+							"type": "string"
+						},
+						"vendorId": {
+							"description": "Vendor ID discovered through CEC ping mechanism.",
+							"type": "string"
+						}
+					},
+					"required": ["brand", "model", "vendorId", "osd", "codeset", "discreteCodeset", "controlRule", "isPaired", "cecCmdDataPowerOn", "cecCmdDataPowerOff", "cecCmdDataInputSelect", "pairingMethod"],
+					"title": "TV device schema.",
+					"type": "object"
+				},
+				"volumeLock": {
+					"description": "To indicate if volume control is locked to TV ==0 / amplifier==1. If volume is locked to TV, RCU volume button controls volume of the TV. ",
+					"type": "integer"
+				},
+				"volumeLockMethod": {
+					"description": "Optional string to indicate how volume Lock was overridden. Expected values are `automatic` (based on power and connected status of the paired devices, default if value not set) and `manual` (through settings menu).",
+					"type": "string"
+				}
+			},
+			"required": ["physicalAddress", "edid", "volumeLock", "tv", "amp"],
+			"title": "Quickset device schema",
+			"type": ["object", "null"]
+		},
+		"cpe.showColdStandByMessage": {
+			"default": true,
+			"type": "boolean"
+		},
+		"cpe.showReplayOptInMessage": {
+			"default": false,
+			"type": "boolean"
+		},
+		"cpe.speedTestResults": {
+			"default": [],
+			"items": {
+				"properties": {
+					"downstreamBitrate": {
+						"type": "number"
+					},
+					"interface": {
+						"type": "string"
+					},
+					"timestamp": {
+						"type": "number"
+					},
+					"upstreamBitrate": {
+						"type": "number"
+					}
+				},
+				"type": "object"
+			},
+			"type": "array"
+		},
+		"cpe.standByMode": {
+			"default": "LukewarmStandby",
+			"enum": ["ActiveStandby", "LukewarmStandby", "ColdStandby"],
+			"type": "string"
+		},
+		"cpe.uiTestTools": {
+			"default": false,
+			"type": "boolean"
+		},
+		"cpe.volume": {
+			"default": 50,
+			"maximum": 100,
+			"minimum": 0,
+			"type": "number"
+		},
+		"cpe.wifiClientEnabled": {
+			"default": false,
+			"type": "boolean"
+		},
+		"cpe.wifiClientPass": {
+			"default": null,
+			"type": ["string", "null"]
+		},
+		"cpe.wifiClientSsid": {
+			"default": null,
+			"type": ["string", "null"]
+		},
+		"cpe.xaBrokerUrl": {
+			"default": "",
+			"type": "string"
+		},
+		"customer.appsOptIn": {
+			"default": false,
+			"type": "boolean"
+		},
+		"customer.cityId": {
+			"default": null,
+			"readOnly": true,
+			"type": ["string", "null"]
+		},
+		"customer.customerId": {
+			"readOnly": true,
+			"type": "string"
+		},
+		"customer.isAdultPinUsed": {
+			"default": false,
+			"readOnly": true,
+			"type": "boolean"
+		},
+		"customer.isSuspended": {
+			"default": false,
+			"readOnly": true,
+			"type": "boolean"
+		},
+		"customer.personalSuggestions": {
+			"default": false,
+			"type": "boolean"
+		},
+		"customer.recordPaddingAfter": {
+			"default": 300,
+			"description": "Values in seconds",
+			"enum": [0, 60, 120, 300, 900, 1800],
+			"type": "number"
+		},
+		"customer.recordPaddingBefore": {
+			"default": 60,
+			"description": "Values in seconds",
+			"enum": [0, 15, 30, 60, 120, 300],
+			"type": "number"
+		},
+		"customer.replayOptIn": {
+			"default": null,
+			"type": ["boolean", "null"]
+		},
+		"customer.replayOptInTime": {
+			"default": null,
+			"readOnly": true,
+			"type": ["number", "null"]
+		},
+		"profile.ageLock": {
+			"default": 12,
+			"enum": [-1, 12, 15, 18],
+			"type": "number"
+		},
+		"profile.audioDescription": {
+			"default": false,
+			"type": "boolean"
+		},
+		"profile.audioLang": {
+			"default": "",
+			"enum": ["", "ar", "bs", "zh", "hr", "cs", "da", "nl", "et", "en", "el", "fi", "fr", "de", "he", "hi", "hu", "it", "lv", "lt", "no", "mt", "mk", "pl", "pt", "ro", "ru", "sr", "sk", "es", "sv", "tr", "ur"],
+			"type": "string"
+		},
+		"profile.onScreenKeyboardMode": {
+			"default": "Flo",
+			"enum": ["Normal", "Flo"],
+			"type": "string"
+		},
+		"profile.osdLang": {
+			"default": "en",
+			"enum": ["en"],
+			"type": "string"
+		},
+		"profile.recentlyUsedAppsItems": {
+			"default": [],
+			"type": "array"
+		},
+		"profile.recentlyUsedSettingsItems": {
+			"default": ["ageLock", "changePin", "audioLanguage", "subtitleOptions", "standByMode", "lockChannels"],
+			"type": "array"
+		},
+		"profile.subControl": {
+			"default": false,
+			"type": "boolean"
+		},
+		"profile.subHardOfHearing": {
+			"default": false,
+			"type": "boolean"
+		},
+		"profile.subLang": {
+			"default": "en",
+			"enum": ["ar", "bs", "zh", "hr", "cs", "da", "nl", "et", "en", "el", "fi", "fr", "de", "he", "hi", "hu", "it", "lv", "lt", "no", "mt", "mk", "pl", "pt", "ro", "ru", "sr", "sk", "es", "sv", "tr", "ur"],
+			"type": "string"
+		},
+		"profile.surfFavoriteChannels": {
+			"default": false,
+			"type": "boolean"
+		},
+		"profile.tipsAndTricks": {
+			"additionalProperties": false,
+			"default": {
+				"ids": [],
+				"timestamps": []
+			},
+			"properties": {
+				"ids": {
+					"items": {
+						"type": "string"
+					},
+					"type": "array"
+				},
+				"timestamps": {
+					"items": {
+						"type": "number"
+					},
+					"type": "array"
+				}
+			},
+			"required": ["ids", "timestamps"],
+			"type": "object"
+		}
+	},
+	"sliderTrickModes": {
+		"acceleration": 3000,
+		"maxSpeed": 200,
+		"refreshRate": 100
+	},
+	"smartrcu": {
+		"configuration": {
+			"autoPollinterval": 13000,
+			"backLightDuration": 1500,
+			"cecPingInterval": 10,
+			"deviceDefaultPowerOnTime": 2000,
+			"enableOneTouchView": true,
+			"hdmiOSDName": "Horizon",
+			"remoteFinderTimeout": 30000,
+			"remoteFinderTriggerThreshold": 3
+		},
+		"quicksetCredentials": {
+			"appId": "EOS_RCU_2017",
+			"encryptionVector": "$Mpip=[)T+~4|WhR",
+			"geoFenceName": "Europe",
+			"oemId": "LGI_Nextgen_RCU",
+			"productId": "QS-BV LGI RF4CE NextGen 2016",
+			"regionIdWorldwide": "898"
+		}
+	},
+	"speedTest": {
+		"highThresholdMbps": 10,
+		"lowThresholdMbps": 4,
+		"periodicity": 14400,
+		"speedTestUrl": "http://speedtest.prod.uk.dmdsdp.com/welcome_movie/HWV_ENG_PREVIEW_EN.mov"
+	},
+	"tr69": {
+		"deviceInfoTemperatureSensorPollMillis": 60000
+	}
+}

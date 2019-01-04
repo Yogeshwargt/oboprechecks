@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	(c) 2016; All rights reserved by Liberty Global UK plc; Schiphol-Rijk
+	- Created first version on 21-Dec-2016. This scheme will be used by the UI to decide how to render a certain screen.
+	Current list of UI Rendering Hints properties are based on the Dawn HZN 4 doc, v3.11. Any term ID additions to this document must lead to a new version issued and follow the CR process. Any new addition should be processed dynamically processed by all systems without issuance of new versions of this CS. 
+	2017-01-05T11:30:00Z Patrick Heijma - pheijma@libertyglobal.com
+	
+	(c) 2016; All rights reserved by Liberty Global UK plc; Schiphol-Rijk
+	- Created first version on 21-Dec-2016. This scheme will be used by the UI to decide how to render a certain screen.
+
+	2017-01-05T11:30:00Z Patrick Heijma - pheijma@libertyglobal.com 
+	Current list of UI Rendering Hints properties are based on the Dawn HZN 4 doc, v3.11. Any term ID additions to this document must lead to a new version issued and follow the CR process. Any new addition should be processed dynamically processed by all systems without issuance of new versions of this CS. 
+
+	2017-01-30T14:29:18Z (Monday) kfallon@libertyglobal.com 
+	Updated to reflect missing elements in 3.11.
+
+	2017-03-09T10:34:23Z (Thursday) kfallon@libertyglobal.com
+	Updated to reflect addition of ContinueWatching in revision 3.12.
+
+	2017-05-04T15:45:00Z Patrick Heijma - pheijma@libertyglobal.com 
+	Updated to reflect adition of ScreenContent in revision 3.13.
+
+	2017-06-xx Patrick Heijma - pheijma@libertyglobal.com 
+	Updated to reflect adition of ScreenContent in revision 3.14.
+
+	2017-07-03T12:00:00Z Patrick Heijma - pheijma@libertyglobal.com 
+	Updated to reflect adition of ScreenContent in revision 3.15, added ScreenLayout/Contextual. 
+
+	2017-12-15T12:00:00Z Patrick Heijma - pheijma@libertyglobal.com 
+	Updated to reflect adition of in revision 3.16, added ScreenContent/Promotions, added ScreenLayout/Playout. Removed ScreenLayout/Playlist. Removed Theme.
+	Updated to reflect adition of in revision 3.17, added ExcludeOptions.
+
+	2018-01-29T12:00:00Z Patrick Heijma - pheijma@libertyglobal.com
+	Updated to reflect adition of in revision 3.18, added CollectionLayout/PromotionalSpot.
+	
+-->
+      <ClassificationScheme uri="urn:libertyglobal:RenderingHintsCS:2013" xmlns="urn:tva:metadata:2010">
+        <Term xmlns="urn:tva:mpeg7:2008" termID="CategoryType">
+          <Name xml:lang="en">Category Type</Name>
+          <Definition xml:lang="en">The value of the CategoryType property hints the client on how to render the screen.</Definition>
+            <Term termID="SeriesContainer">
+              <Name xml:lang="en">SeriesContainer</Name>
+              <Definition xml:lang="en">A category that contains only series objects</Definition>
+            </Term>
+            <Term termID="Hidden">
+              <Name xml:lang="en">Hidden</Name>
+              <Definition xml:lang="en">Defines that this category should not be displayed in the Dawn UI.</Definition>
+            </Term>
+        </Term>
+        <Term xmlns="urn:tva:mpeg7:2008" termID="ScreenContent">
+          <Name xml:lang="en">Screen Content</Name>
+          <Definition xml:lang="en">The property defines the link to RENTED screen under Saved section in HZN4 UI.</Definition>
+            <Term termID="Rent">
+              <Name xml:lang="en">Rent</Name>
+              <Definition xml:lang="en">Defines ‘RENTED’ area in the VoD section to be linked under Saved Section.</Definition>
+            </Term>
+            <Term termID="Promotions">
+              <Name xml:lang="en">Promotions</Name>
+              <Definition xml:lang="en">This property defines the editorial promotion to be displayed together with Main Menu.</Definition>
+            </Term>
+        </Term>
+        <Term xmlns="urn:tva:mpeg7:2008" termID="ScreenLayout">
+          <Name xml:lang="en">Screen Layout</Name>
+          <Definition xml:lang="en">The property can be used to define the screen layout of the content in the category or the screen.</Definition>
+            <Term termID="Collection">
+              <Name xml:lang="en">Collection screen</Name>
+              <Definition xml:lang="en">A collection is a horizontal row of Tiles that are grouped by at least 1 common attribute. https://wikiprojects.upc.biz/display/HZN4/Collection</Definition>
+            </Term>
+            <Term termID="Tile">
+              <Name xml:lang="en">Tile screen</Name>
+              <Definition xml:lang="en">Tiles are focusable and selectable 'rectangles' representing either assets/series, people and content areas or similar entry points to content. https://wikiprojects.upc.biz/display/HZN4/Tile</Definition>
+            </Term>
+            <Term termID="Grid">
+              <Name xml:lang="en">Grid screen</Name>
+              <Definition xml:lang="en">Grid pages are filterable pages containing all items that fall under a specified common nominator. This common nominator can either be a section, a editorial collection, folder or recommendation query. https://wikiprojects.upc.biz/pages/viewpage.action?pageId=47646152</Definition>
+            </Term>
+            <Term termID="GridEditorial">
+              <Name xml:lang="en">Editorial Grid screen</Name>
+              <Definition xml:lang="en">https://wikiprojects.upc.biz/pages/viewpage.action?pageId=47646152#Gridpage(template)-4.3EditorialGrid</Definition>
+            </Term>
+            <Term termID="GridBranded">
+              <Name xml:lang="en">Branded Grid screen</Name>
+              <Definition xml:lang="en">https://wikiprojects.upc.biz/pages/viewpage.action?pageId=47646152#Gridpage(template)-4.2BrandedGrid</Definition>
+            </Term>
+            <Term termID="MPP">
+              <Name xml:lang="en">Multi Product Package screen</Name>
+              <Definition xml:lang="en">Multi product packages offer a group of titles as a package that can be purchased as one. The package itself can be reached by selecting a related editorial or promotion editorial or promotion tile. https://wikiprojects.upc.biz/pages/viewpage.action?pageId=49382227</Definition>
+            </Term>
+            <Term termID="Details">
+              <Name xml:lang="en">Details screen</Name>
+              <Definition xml:lang="en">This template is used for various detail pages which provide the basic information and available actions for the content. The info and data displayed is specific to the content this page represents, and the layout can differ depending on the source/type of the content. https://wikiprojects.upc.biz/pages/viewpage.action?pageId=47646722</Definition>
+            </Term>
+            <Term termID="Sections">
+              <Name xml:lang="en">New (sub) section level</Name>
+              <Definition xml:lang="en">This is the top horizontal menu that allows navigating between sections (sub-areas) https://wikiprojects.upc.biz/display/HZN4/Section+Navigation+-+OneMW</Definition>
+            </Term>
+            <Term termID="Contextual">
+              <Name xml:lang="en">Contextual menu</Name>
+              <Definition xml:lang="en">This property defines the contextual menu configuration for MOVIES and SERIES.</Definition>
+            </Term>
+            <Term termID="Playout">
+              <Name xml:lang="en">Playout</Name>
+              <Definition xml:lang="en">This property is only used for Promotions. When defined, UI will link to the VoD playout of the title of the promotion.</Definition>
+            </Term>
+        </Term>
+        <Term xmlns="urn:tva:mpeg7:2008" termID="CollectionLayout">
+          <Name xml:lang="en">Collection Layout</Name>
+          <Definition xml:lang="en">The collection screen can contain different kind of collections. A category that represents a collection must define the type of layout to use for the content. This must be done using the CollectionLayout custom property that can be set on a category. https://wikiprojects.upc.biz/display/HZN4/Collections+-+OneMW</Definition>
+            <Term termID="CombinedCollection">
+              <Name xml:lang="en">Combined Collection</Name>
+              <Definition xml:lang="en">The combined collection allows the combination of multiple collections of the same kind to be combined to one single collection. This allows to display content from different sources within a row.</Definition>
+            </Term>
+            <Term termID="BasicCollection">
+              <Name xml:lang="en">Basic Collection</Name>
+              <Definition xml:lang="en">This collection can either be filled with editorial content or via smart node or via the recommendations or top lists</Definition>
+            </Term>
+            <Term termID="GridCollection">
+              <Name xml:lang="en">Grid Collection</Name>
+              <Definition xml:lang="en">The grid collection is very similar to a Basic Collection, but always has a Grid Entry Tile as first tile.</Definition>
+            </Term>
+            <Term termID="TileCollection">
+              <Name xml:lang="en">Tile Collection</Name>
+              <Definition xml:lang="en">Single items in the collection, which can have different shapes/meanings and references. </Definition>
+            </Term>
+            <Term termID="CharacterCollection">
+              <Name xml:lang="en">Character Collection</Name>
+              <Definition xml:lang="en">TBD</Definition>
+            </Term>
+            <Term termID="PromotionCollection">
+              <Name xml:lang="en">Promotion Collection</Name>
+              <Definition xml:lang="en">Promotion Collections, just like Editorial Collections, contain editorial content only. This means that the content is hand assigned to the collection.</Definition>
+            </Term>
+            <Term termID="PromotionalSpot">
+              <Name xml:lang="en">Promotional Spot Collection</Name>
+              <Definition xml:lang="en">Promotional Spot Collections, can be configured to promote series (shows or seasons) and it can also be configured to link to Grid Screen.</Definition>
+            </Term>
+        </Term>
+        <Term xmlns="urn:tva:mpeg7:2008" termID="ContentType">
+          <Name xml:lang="en">Content Type</Name>
+          <Definition xml:lang="en">The content in a collections is by default handled as regular categories with titles or series. For collections that require special handling by the CPE and/or contain content from different sources we create the ContentType Custom Node property to define how to handle the collection.</Definition>
+            <Term termID="Editorial">
+              <Name xml:lang="en">Editorial</Name>
+              <Definition xml:lang="en">This can either be content of regular categories of content of categories set up as a smart node</Definition>
+            </Term>
+            <Term termID="Suggested">
+              <Name xml:lang="en">Suggested</Name>
+              <Definition xml:lang="en">Fill with personalized recommendations from the whole catalogue. If the customer has opted-out, will return non-personalized recommendations.</Definition>
+            </Term>
+            <Term termID="SuggestedFrom">
+              <Name xml:lang="en">Suggested From</Name>
+              <Definition xml:lang="en">Fill with personalized recommendations from a specific category including all of its sub-categories. If the customer has opted-out, will return non-personalized recommendations.</Definition>
+            </Term>
+            <Term termID="RelatedToTitle">
+              <Name xml:lang="en">Related To Title</Name>
+              <Definition xml:lang="en">Fill with recommendations that are related to a specific title. </Definition>
+            </Term>
+            <Term termID="RelatedToTitleFrom">
+              <Name xml:lang="en">Related To Title From</Name>
+              <Definition xml:lang="en">Fill with recommendations that are related to a specific title, but limited in scope to a specific category</Definition>
+            </Term>
+            <Term termID="RelatedToTitleForGenre">
+              <Name xml:lang="en">Related To Title For Genre</Name>
+              <Definition xml:lang="en">Fill with recommendations that are related to a specific title, but limited in scope to title’s genre/subgenre.</Definition>
+            </Term>
+            <Term termID="SuggestedForGenre">
+              <Name xml:lang="en">Suggested For Genre</Name>
+              <Definition xml:lang="en">Fill with personalized recommendations that are related to a specific genre.</Definition>
+            </Term>
+            <Term termID="SuggestedForGenreFrom">
+              <Name xml:lang="en">Suggested For Genre From</Name>
+              <Definition xml:lang="en">Fill with personalized recommendations that are related to a specific genre. The genre to be used as reference is the genre of the title that is placed in this category.</Definition>
+            </Term>
+            <Term termID="TopList">
+              <Name xml:lang="en">Top List</Name>
+              <Definition xml:lang="en">Fill the category with the assets from a recommendation Top List.</Definition>
+            </Term>
+            <Term termID="PausedItems">
+              <Name xml:lang="en">Paused Items</Name>
+              <Definition xml:lang="en">Collection with paused items</Definition>
+            </Term>
+            <Term termID="ContinueWatching">
+              <Name xml:lang="en">Continue Watching</Name>
+              <Definition xml:lang="en">Collection with continue watching items</Definition>
+            </Term>
+            <Term termID="PurchasedItems">
+              <Name xml:lang="en">Purchased Items</Name>
+              <Definition xml:lang="en">Collection with purchased items</Definition>
+            </Term>
+            <Term termID="WatchList">
+              <Name xml:lang="en">Watch List</Name>
+              <Definition xml:lang="en">Collection with items added to the watch list</Definition>
+            </Term>
+            <Term termID="WatchListTitles">
+              <Name xml:lang="en">Watch List Titles</Name>
+              <Definition xml:lang="en">NOT SUPPORTED</Definition>
+            </Term>
+            <Term termID="WatchListSeries">
+              <Name xml:lang="en">Watch List Series</Name>
+              <Definition xml:lang="en">NOT SUPPORTED</Definition>
+            </Term>
+        </Term>
+        <Term xmlns="urn:tva:mpeg7:2008" termID="DefaultClientSortField">
+          <Name xml:lang="en">Default Client Sort Field</Name>
+          <Definition xml:lang="en"></Definition>
+            <Term termID="BroadcastDate">
+              <Name xml:lang="en">BroadcastDate</Name>
+              <Definition xml:lang="en"></Definition>
+            </Term>
+            <Term termID="Name">
+              <Name xml:lang="en">Name</Name>
+              <Definition xml:lang="en"></Definition>
+            </Term>
+            <Term termID="Ordinal">
+              <Name xml:lang="en">Ordinal</Name>
+              <Definition xml:lang="en"></Definition>
+            </Term>
+            <Term termID="Popularity">
+              <Name xml:lang="en">Popularity</Name>
+              <Definition xml:lang="en"></Definition>
+            </Term>
+        </Term>
+        <Term xmlns="urn:tva:mpeg7:2008" termID="DefaultClientSortDirection">
+          <Name xml:lang="en">Default Client Sort Direction</Name>
+          <Definition xml:lang="en">defines the sort direction as either ascending or descending.</Definition>
+            <Term termID="Ascending">
+              <Name xml:lang="en">Ascending</Name>
+              <Definition xml:lang="en">Sort from low to high, depending on the sort field. This is the default for all sort types except for BroadcastDate.</Definition>
+            </Term>
+            <Term termID="Descending">
+              <Name xml:lang="en">Descending</Name>
+              <Definition xml:lang="en">Sort from high to low. This is the default for BroadcastDate sorting.</Definition>
+            </Term>
+        </Term>
+        <Term xmlns="urn:tva:mpeg7:2008" termID="TopListID">
+          <Name xml:lang="en">Top List ID</Name>
+          <Definition xml:lang="en">When defining a category as a TopList collection, we also have to specify which Top List to use.</Definition>
+        </Term>
+        <Term xmlns="urn:tva:mpeg7:2008" termID="MaxItems">
+          <Name xml:lang="en">Max Items</Name>
+          <Definition xml:lang="en">When defining a basic or grid collection, this property can be used to limit the maximal number of items to be displayed in the collection and corresponding grid screen.</Definition>
+        </Term>
+        <Term xmlns="urn:tva:mpeg7:2008" termID="ExcludeOptions">
+          <Name xml:lang="en">Exclude Options</Name>
+          <Definition xml:lang="en">This property will be only used in Grid Screen categories to exclude filter options: Last chance and/or new arrivals.</Definition>
+        </Term>
+      </ClassificationScheme>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+	2017-12-11T12:00:00Z Patrick Heijma - pheijma@libertyglobal.com 
+	Initial version, copy of urn:eventis:metadata:cs:PurchaseTypeCS:2013 but with additional OTTMarker termID.
+
+-->
+		<ClassificationScheme uri="urn:libertyglobal:metadata:cs:PurchaseTypeCS:2013" xmlns="urn:tva:metadata:2010">
+			<Term xmlns="urn:tva:mpeg7:2008" termID="nPVRMarker">
+				<Name xml:lang="en">nPVR Marker</Name>
+			</Term>
+			<Term xmlns="urn:tva:mpeg7:2008" termID="TSTVMarker">
+				<Name xml:lang="en">TSTV Marker</Name>
+			</Term>
+			<Term xmlns="urn:tva:mpeg7:2008" termID="OTTMarker">
+				<Name xml:lang="en">OTT Marker</Name>
+			</Term>
+		</ClassificationScheme>

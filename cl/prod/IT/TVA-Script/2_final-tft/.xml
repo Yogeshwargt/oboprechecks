@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TVAMain xmlns="urn:tva:metadata:2010" xmlns:mpeg7="urn:tva:mpeg7:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xml:lang="es" xsi:schemaLocation="urn:tva:metadata:2010 http://www.broadcastingdata.com/dataimport/tva/tva1.6/tva_metadata_3-1_v161.xsd">
+  <ProgramDescription>
+    <GroupInformationTable>
+      <GroupInformation groupId="">
+        <GroupType xsi:type="ProgramGroupTypeType" value="otherCollection"/>
+        <BasicDescription>
+          <Title xml:lang="es" type="main"/>
+          <Synopsis xml:lang="es" length="short"/>
+          <Genre href="urn:eventis:metadata:cs:GroupTypeCS:2010:serviceGroup" type="other"/>
+          <PurchaseList>
+            <PurchaseItem>
+              <Price currency="CLP">0</Price>
+              <Purchase>
+                <PurchaseType href="urn:eventis:metadata:cs:PurchaseTypeCS:2010:productCrid">
+                  <Definition/>
+                </PurchaseType>
+              </Purchase>
+              <Purchase>
+                <PurchaseType href="urn:eventis:metadata:cs:PropertyCS:2010:profile">
+                  <Definition>PLATFORM_EOS</Definition>
+                </PurchaseType>
+              </Purchase>
+            </PurchaseItem>
+          </PurchaseList>
+        </BasicDescription>
+        <!-- Service group to product link -->
+        <MemberOf xsi:type="MemberOfType" crid=""/>
+      </GroupInformation>
+    </GroupInformationTable>
+  </ProgramDescription>
+</TVAMain>

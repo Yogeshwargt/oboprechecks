@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+(c) 2018 -2018; All rights reserved by Liberty Global UK plc; Schiphol-Rijk
+
+2018-02-26 - Created first version. This scheme will be used for service content classification i.e. to flag service genres.
+
+1	Sport
+2	Entertainment
+3	Documentary & Lifestyle
+4	Movies & Series
+5	Kids
+6	Shopping
+7	General channel
+8	News
+9	Culture
+10	Interactiv TV
+11	Regional channel
+12	Religious & ethik
+13	Documentary & Info
+14	Music
+15	Local channel
+
+-->
+    <ClassificationScheme uri="urn:libertyglobal:metadata:cs:ServiceContentCS:2018">
+      <!-- ##################################################################### -->
+      <!-- Liberty Global Service Genres -->
+      <!-- Definition: Liberty Global Genres with translations in all supported languages -->
+      <!-- ##################################################################### -->
+      <Term xmlns="urn:tva:mpeg7:2008" termID="1">
+        <Name xml:lang="en-EU">Sport</Name>
+      </Term>
+      <Term xmlns="urn:tva:mpeg7:2008" termID="2">
+        <Name xml:lang="en-EU">Entertainment</Name>
+      </Term>
+      <Term xmlns="urn:tva:mpeg7:2008" termID="3">
+        <Name xml:lang="en-EU">Documentary &amp; Lifestyle</Name>
+      </Term>
+      <Term xmlns="urn:tva:mpeg7:2008" termID="4">
+        <Name xml:lang="en-EU">Movies &amp; Series</Name>
+      </Term>
+      <Term xmlns="urn:tva:mpeg7:2008" termID="5">
+        <Name xml:lang="en-EU">Kids</Name>
+      </Term>
+      <Term xmlns="urn:tva:mpeg7:2008" termID="6">
+        <Name xml:lang="en-EU">Shopping</Name>
+      </Term>
+      <Term xmlns="urn:tva:mpeg7:2008" termID="7">
+        <Name xml:lang="en-EU">General channel</Name>
+      </Term>
+      <Term xmlns="urn:tva:mpeg7:2008" termID="8">
+        <Name xml:lang="en-EU">News</Name>
+      </Term>
+      <Term xmlns="urn:tva:mpeg7:2008" termID="9">
+        <Name xml:lang="en-EU">Culture</Name>
+      </Term>
+      <Term xmlns="urn:tva:mpeg7:2008" termID="10">
+        <Name xml:lang="en-EU">Interactiv TV</Name>
+      </Term>
+      <Term xmlns="urn:tva:mpeg7:2008" termID="11">
+        <Name xml:lang="en-EU">Regional channel</Name>
+      </Term>
+      <Term xmlns="urn:tva:mpeg7:2008" termID="12">
+        <Name xml:lang="en-EU">Religious &amp; Ethik</Name>
+      </Term>
+      <Term xmlns="urn:tva:mpeg7:2008" termID="13">
+        <Name xml:lang="en-EU">Documentary &amp; Info</Name>
+      </Term>
+      <Term xmlns="urn:tva:mpeg7:2008" termID="14">
+        <Name xml:lang="en-EU">Music</Name>
+      </Term>
+      <Term xmlns="urn:tva:mpeg7:2008" termID="15">
+        <Name xml:lang="en-EU">Local channel</Name>
+      </Term>
+    </ClassificationScheme>

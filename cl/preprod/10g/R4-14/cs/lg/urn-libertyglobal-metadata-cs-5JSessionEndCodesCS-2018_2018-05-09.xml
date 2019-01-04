@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	2018-05-09T12:00:00Z babak Tahmasebi - btahmasebi@libertyglobal.com
+	Initial version of the 5J Session End Codes CS.
+-->
+
+    <ClassificationScheme uri="urn:libertyglobal:metadata:cs:5JSessionEndCodesCS:2018" xmlns="urn:tva:metadata:2010">
+	<Term xmlns="urn:tva:mpeg7:2008" termID="100">
+		<Name xml:lang="en">100 Additional info</Name>
+		<Definition xml:lang="en">additional info</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="101">
+		<Name xml:lang="en">101 UHD</Name>
+		<Definition xml:lang="en">101</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="102">
+		<Name xml:lang="en">102 UHD</Name>
+		<Definition xml:lang="en">102</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="103">
+		<Name xml:lang="en">103 UHD</Name>
+		<Definition xml:lang="en">103</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="104">
+		<Name xml:lang="en">104 UHD</Name>
+		<Definition xml:lang="en">104</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="105">
+		<Name xml:lang="en">105 UHD</Name>
+		<Definition xml:lang="en">105</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="106">
+		<Name xml:lang="en">106 UHD</Name>
+		<Definition xml:lang="en">106</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="107">
+		<Name xml:lang="en">107 UHD</Name>
+		<Definition xml:lang="en">107</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="108">
+		<Name xml:lang="en">108 UHD</Name>
+		<Definition xml:lang="en">108</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="109">
+		<Name xml:lang="en">109 UHD</Name>
+		<Definition xml:lang="en">109</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="110">
+		<Name xml:lang="en">110 UHD</Name>
+		<Definition xml:lang="en">110</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="111">
+		<Name xml:lang="en">111 UHD</Name>
+		<Definition xml:lang="en">111</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="112">
+		<Name xml:lang="en">112 UHD</Name>
+		<Definition xml:lang="en">112</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="113">
+		<Name xml:lang="en">113 UHD</Name>
+		<Definition xml:lang="en">113</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="114">
+		<Name xml:lang="en">114 UHD</Name>
+		<Definition xml:lang="en">114</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="115">
+		<Name xml:lang="en">115 UHD</Name>
+		<Definition xml:lang="en">115</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="116">
+		<Name xml:lang="en">116 UHD</Name>
+		<Definition xml:lang="en">116</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="117">
+		<Name xml:lang="en">117 UHD</Name>
+		<Definition xml:lang="en">117</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="118">
+		<Name xml:lang="en">118 UHD</Name>
+		<Definition xml:lang="en">118</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="119">
+		<Name xml:lang="en">119 UHD</Name>
+		<Definition xml:lang="en">119</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="120">
+		<Name xml:lang="en">120 UHD</Name>
+		<Definition xml:lang="en">120</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="121">
+		<Name xml:lang="en">121 UHD</Name>
+		<Definition xml:lang="en">121</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="122">
+		<Name xml:lang="en">122 UHD</Name>
+		<Definition xml:lang="en">122</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="123">
+		<Name xml:lang="en">123 UHD</Name>
+		<Definition xml:lang="en">123</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="124">
+		<Name xml:lang="en">124 UHD</Name>
+		<Definition xml:lang="en">124</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="125">
+		<Name xml:lang="en">125 UHD</Name>
+		<Definition xml:lang="en">125</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="126">
+		<Name xml:lang="en">126 UHD</Name>
+		<Definition xml:lang="en">126</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="127">
+		<Name xml:lang="en">127 UHD</Name>
+		<Definition xml:lang="en">127</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="128">
+		<Name xml:lang="en">128 UHD</Name>
+		<Definition xml:lang="en">128</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="129">
+		<Name xml:lang="en">129 UHD</Name>
+		<Definition xml:lang="en">129</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="130">
+		<Name xml:lang="en">130 UHD</Name>
+		<Definition xml:lang="en">130</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="131">
+		<Name xml:lang="en">131 UHD</Name>
+		<Definition xml:lang="en">131</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="132">
+		<Name xml:lang="en">132 UHD</Name>
+		<Definition xml:lang="en">132</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="133">
+		<Name xml:lang="en">133 UHD</Name>
+		<Definition xml:lang="en">133</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="134">
+		<Name xml:lang="en">134 UHD</Name>
+		<Definition xml:lang="en">134</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="135">
+		<Name xml:lang="en">135 UHD</Name>
+		<Definition xml:lang="en">135</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="136">
+		<Name xml:lang="en">136 UHD</Name>
+		<Definition xml:lang="en">136</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="137">
+		<Name xml:lang="en">137 UHD</Name>
+		<Definition xml:lang="en">137</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="138">
+		<Name xml:lang="en">138 UHD</Name>
+		<Definition xml:lang="en">138</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="139">
+		<Name xml:lang="en">139 UHD</Name>
+		<Definition xml:lang="en">139</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="140">
+		<Name xml:lang="en">140 UHD</Name>
+		<Definition xml:lang="en">140</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="141">
+		<Name xml:lang="en">141 UHD</Name>
+		<Definition xml:lang="en">141</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="142">
+		<Name xml:lang="en">142 UHD</Name>
+		<Definition xml:lang="en">142</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="143">
+		<Name xml:lang="en">143 UHD</Name>
+		<Definition xml:lang="en">143</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="144">
+		<Name xml:lang="en">144 UHD</Name>
+		<Definition xml:lang="en">144</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="145">
+		<Name xml:lang="en">145 UHD</Name>
+		<Definition xml:lang="en">145</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="146">
+		<Name xml:lang="en">146 UHD</Name>
+		<Definition xml:lang="en">146</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="147">
+		<Name xml:lang="en">147 UHD</Name>
+		<Definition xml:lang="en">147</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="148">
+		<Name xml:lang="en">148 UHD</Name>
+		<Definition xml:lang="en">148</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="149">
+		<Name xml:lang="en">149 UHD</Name>
+		<Definition xml:lang="en">149</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="150">
+		<Name xml:lang="en">150 UHD</Name>
+		<Definition xml:lang="en">150</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="151">
+		<Name xml:lang="en">151 UHD</Name>
+		<Definition xml:lang="en">151</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="152">
+		<Name xml:lang="en">152 UHD</Name>
+		<Definition xml:lang="en">152</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="153">
+		<Name xml:lang="en">153 UHD</Name>
+		<Definition xml:lang="en">153</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="154">
+		<Name xml:lang="en">154 UHD</Name>
+		<Definition xml:lang="en">154</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="155">
+		<Name xml:lang="en">155 UHD</Name>
+		<Definition xml:lang="en">155</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="156">
+		<Name xml:lang="en">156 UHD</Name>
+		<Definition xml:lang="en">156</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="157">
+		<Name xml:lang="en">157 UHD</Name>
+		<Definition xml:lang="en">157</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="158">
+		<Name xml:lang="en">158 UHD</Name>
+		<Definition xml:lang="en">158</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="159">
+		<Name xml:lang="en">159 UHD</Name>
+		<Definition xml:lang="en">159</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="160">
+		<Name xml:lang="en">160 UHD</Name>
+		<Definition xml:lang="en">160</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="161">
+		<Name xml:lang="en">161 UHD</Name>
+		<Definition xml:lang="en">161</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="162">
+		<Name xml:lang="en">162 UHD</Name>
+		<Definition xml:lang="en">162</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="163">
+		<Name xml:lang="en">163 UHD</Name>
+		<Definition xml:lang="en">163</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="164">
+		<Name xml:lang="en">164 UHD</Name>
+		<Definition xml:lang="en">164</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="165">
+		<Name xml:lang="en">165 UHD</Name>
+		<Definition xml:lang="en">165</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="166">
+		<Name xml:lang="en">166 UHD</Name>
+		<Definition xml:lang="en">166</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="167">
+		<Name xml:lang="en">167 UHD</Name>
+		<Definition xml:lang="en">167</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="168">
+		<Name xml:lang="en">168 UHD</Name>
+		<Definition xml:lang="en">168</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="169">
+		<Name xml:lang="en">169 UHD</Name>
+		<Definition xml:lang="en">169</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="170">
+		<Name xml:lang="en">170 UHD</Name>
+		<Definition xml:lang="en">170</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="171">
+		<Name xml:lang="en">171 UHD</Name>
+		<Definition xml:lang="en">171</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="172">
+		<Name xml:lang="en">172 UHD</Name>
+		<Definition xml:lang="en">172</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="173">
+		<Name xml:lang="en">173 UHD</Name>
+		<Definition xml:lang="en">173</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="174">
+		<Name xml:lang="en">174 UHD</Name>
+		<Definition xml:lang="en">174</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="175">
+		<Name xml:lang="en">175 UHD</Name>
+		<Definition xml:lang="en">175</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="176">
+		<Name xml:lang="en">176 UHD</Name>
+		<Definition xml:lang="en">176</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="177">
+		<Name xml:lang="en">177 UHD</Name>
+		<Definition xml:lang="en">177</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="178">
+		<Name xml:lang="en">178 UHD</Name>
+		<Definition xml:lang="en">178</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="179">
+		<Name xml:lang="en">179 UHD</Name>
+		<Definition xml:lang="en">179</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="180">
+		<Name xml:lang="en">180 UHD</Name>
+		<Definition xml:lang="en">180</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="181">
+		<Name xml:lang="en">181 UHD</Name>
+		<Definition xml:lang="en">181</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="182">
+		<Name xml:lang="en">182 UHD</Name>
+		<Definition xml:lang="en">182</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="183">
+		<Name xml:lang="en">183 UHD</Name>
+		<Definition xml:lang="en">183</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="184">
+		<Name xml:lang="en">184 UHD</Name>
+		<Definition xml:lang="en">184</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="185">
+		<Name xml:lang="en">185 UHD</Name>
+		<Definition xml:lang="en">185</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="186">
+		<Name xml:lang="en">186 UHD</Name>
+		<Definition xml:lang="en">186</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="187">
+		<Name xml:lang="en">187 UHD</Name>
+		<Definition xml:lang="en">187</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="188">
+		<Name xml:lang="en">188 UHD</Name>
+		<Definition xml:lang="en">188</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="189">
+		<Name xml:lang="en">189 UHD</Name>
+		<Definition xml:lang="en">189</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="190">
+		<Name xml:lang="en">190 UHD</Name>
+		<Definition xml:lang="en">190</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="191">
+		<Name xml:lang="en">191 UHD</Name>
+		<Definition xml:lang="en">191</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="192">
+		<Name xml:lang="en">192 UHD</Name>
+		<Definition xml:lang="en">192</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="193">
+		<Name xml:lang="en">193 UHD</Name>
+		<Definition xml:lang="en">193</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="194">
+		<Name xml:lang="en">194 UHD</Name>
+		<Definition xml:lang="en">194</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="195">
+		<Name xml:lang="en">195 UHD</Name>
+		<Definition xml:lang="en">195</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="196">
+		<Name xml:lang="en">196 UHD</Name>
+		<Definition xml:lang="en">196</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="197">
+		<Name xml:lang="en">197 UHD</Name>
+		<Definition xml:lang="en">197</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="198">
+		<Name xml:lang="en">198 UHD</Name>
+		<Definition xml:lang="en">198</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="199">
+		<Name xml:lang="en">199 UHD</Name>
+		<Definition xml:lang="en">199</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="200">
+		<Name xml:lang="en">200 UHD</Name>
+		<Definition xml:lang="en">200</Definition>
+	</Term>
+	<Term xmlns="urn:tva:mpeg7:2008" termID="201">
+		<Name xml:lang="en">201 The CPE is was unable to acquire a valid DRM license or other DRM error</Name>
+		<Definition xml:lang="en">201</Definition>
+	</Term>
+    </ClassificationScheme>

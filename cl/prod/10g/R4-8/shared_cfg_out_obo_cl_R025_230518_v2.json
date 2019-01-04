@@ -1,0 +1,3511 @@
+{
+	"shared": {
+		"type": "adrenalin57SharedConfiguration",
+		"version": "1.0",
+		"versionDate": "2018-05-23T09:09:09Z",
+		"values": {
+			"locale": {
+				"defaultLanguage": "es-CL",
+				"languages": [
+					"es-CL",
+					"nl-NL",
+					"nl-BE",
+					"fr-BE",
+					"fr-FR",
+					"fr-CH",
+					"en-BE",
+					"en-GB",
+					"en-EU",
+					"en-IE",
+					"ga-IE",
+					"de-DE",
+					"de-CH",
+					"de-AT",
+					"it-IT",
+					"it-CH",
+					"pl-PL",
+					"hr-HR",
+					"hu-HU",
+					"ro-RO",
+					"cs-CZ",
+					"sk-SK",
+					"sl-SI",
+					"tr-TR",
+					"es-ES"
+				],
+				"defaultRegionTag": "SC"
+			},
+			"regions": [
+				{
+					"tag": "SC",
+					"currency": "CLP",
+					"vatPercentage": 19.0
+				}
+			],
+			"encodingProfiles": [
+				{
+					"tag": "PLATFORM_EOS"
+				},
+				{
+					"tag": "ABR_265",
+					"transcoding": {
+						"assetTags": [
+							"ABR_265"
+						]
+					}
+				},
+				{
+					"tag": "HEVC-2160p50-STB",
+					"resolution": "FourK"
+				},
+				{
+					"tag": "Only_4K_layer_p50",
+					"resolution": "FourK"
+				},
+				{
+					"tag": "HEVC-2160p25-STB",
+					"resolution": "FourK"
+				},
+				{
+					"tag": "Only_4K_layer_p25",
+					"resolution": "FourK"
+				},
+				{
+					"tag": "HEVC-1080i25-STB",
+					"resolution": "HD"
+				},
+				{
+					"tag": "HEVC-720p50-STB",
+					"resolution": "HD"
+				},
+				{
+					"tag": "AVC-1080p-OTT",
+					"resolution": "HD"
+				},
+				{
+					"tag": "AVC-720p-OTT",
+					"resolution": "HD"
+				},
+				{
+					"tag": "HEVC-576i25-STB",
+					"resolution": "SD"
+				},
+				{
+					"tag": "AVC-SD43-OTT",
+					"resolution": "SD"
+				},
+				{
+					"tag": "AVC-SD169-OTT",
+					"resolution": "SD"
+				},
+				{
+					"tag": "HEVC-576p25-STB",
+					"resolution": "SD"
+				},
+				{
+					"tag": "HEVC-1080p25-STB",
+					"resolution": "HD"
+				},
+				{
+					"tag": "HEVC-480i30-STB",
+					"resolution": "SD"
+				},
+				{
+					"tag": "AVC-SD169_NTSC-OTT",
+					"resolution": "SD"
+				},
+				{
+					"tag": "HEVC-480p30-STB",
+					"resolution": "SD"
+				},
+				{
+					"tag": "AVC-SD43_NTSC-OTT",
+					"resolution": "SD"
+				}
+			],
+			"deployment": {
+				"endpoints": {
+					"StagingServer": "172.30.182.6",
+					"Stagis": "10.68.62.131",
+					"ProdisPa": "VT-W-P-OBO00005",
+					"ProdisRep": "10.68.62.130",
+					"VodUsageOutputLocation": "E:\\ProdisReportingExport\\VodUsage",
+					"TraxisBE": "10.68.62.135",
+					"TraxisBEHostname": "VT-W-P-OBO00011",
+					"TraxisFE1": "10.68.58.132",
+					"TraxisFE1Hostname": "VT-W-P-OBO00013",
+					"TraxisFE2": "10.68.58.133",
+					"TraxisFE2Hostname": "VT-W-P-OBO00014",
+					"TraxisPublic": "127.0.0.1",
+					"PosterServer": "10.68.58.130",
+					"PosterServerPublic": "oboposter.prod.cl.dmdsdp.com",
+					"NDVR_Validation_URI": "10.68.57.76:8089",
+					"TSTV_Recorder_URI": "10.68.57.76:8090",
+					"Poster_URI_ToBeReplaced1": "ftp://divxftp.rovicorp.com/",
+					"Poster_URI_ToBePrefixed": "https://staticqbr-cl-prod.vtrprod.cdn.dmdsdp.com/image-service/ImagesEPG/EventImages/",
+					"Poster_Vod_URI_ToBePrefixed": "https://staticqbr-cl-prod.vtrprod.cdn.dmdsdp.com/image-service/ImagesEPG/VodImages/",
+					"Poster_Node_URI_ToBePrefixed": "https://staticqbr-cl-prod.vtrprod.cdn.dmdsdp.com/image-service/ImagesEPG/NodeImages/",
+					"5J_VodServer": "wp1-pod1-vod-cl-prod.vtrprod.cdn.dmdsdp.com",
+					"EDS_URI": "10.68.58.151",
+					"Vitria_URI": "10.68.58.151:8080",
+					"TstvDrmReg_URI": "lgiobo.live.ott.irdeto.com",
+					"TstvDrmReg_AccountId": "lgicl",
+					"TsTvDrmReg_ManUserId": "app@lgicl.com",
+					"TsTvDrmReg_ManPassword": "9xmj962J2iIwgbvnlYNK",
+					"TsTvDrmReg_RegisterPolicyId": "35",
+					"TsTvDrmReg_UnregisterPolicyId": "33",
+					"RVodDrmReg_RegisterPolicyId": "35",
+					"RVodDrmReg_UnregisterPolicyId": "33",
+					"TA": "10.68.57.77",
+					"omw-notification-service_URI": "10.68.57.69/omw-notification-service/omwnotification/v1/"
+				}
+			},
+			"features": {
+				"softLinks": [
+					{
+						"termID": "omw_hzn4_vod",
+						"source": "Catalog",
+						"target": "Node"
+					},
+					{
+						"termID": "omw_basic_fr",
+						"source": "Catalog",
+						"target": "Node"
+					},
+					{
+						"termID": "omw_basic_nl",
+						"source": "Catalog",
+						"target": "Node"
+					},
+					{
+						"termID": "omw_basic_en",
+						"source": "Catalog",
+						"target": "Node"
+					},
+					{
+						"termID": "omw_play_fr",
+						"source": "Catalog",
+						"target": "Node"
+					},
+					{
+						"termID": "omw_play_nl",
+						"source": "Catalog",
+						"target": "Node"
+					},
+					{
+						"termID": "omw_play_en",
+						"source": "Catalog",
+						"target": "Node"
+					},
+					{
+						"termID": "omw_playmore_fr",
+						"source": "Catalog",
+						"target": "Node"
+					},
+					{
+						"termID": "omw_playmore_nl",
+						"source": "Catalog",
+						"target": "Node"
+					},
+					{
+						"termID": "omw_playmore_en",
+						"source": "Catalog",
+						"target": "Node"
+					},
+					{
+						"termID": "SourceContentFrom",
+						"source": "Node",
+						"target": "Node"
+					},
+					{
+						"termID": "GenreCategoryLink",
+						"source": "Node",
+						"target": "Node"
+					}
+				],
+				"customNodeProperties": [
+					{
+						"termID": "CategoryType",
+						"validationRegEx": "^(Hidden|SeriesContainer)$"
+					},
+					{
+						"termID": "ScreenContent",
+						"validationRegEx": "^(Rent|Promotions)$"
+					},
+					{
+						"termID": "ScreenLayout",
+						"validationRegEx": "^(Collection|Tile|Grid|GridEditorial|GridBranded|MPP|Details|Sections|Contextual|Playout)$"
+					},
+					{
+						"termID": "CollectionLayout",
+						"validationRegEx": "^(CombinedCollection|BasicCollection|GridCollection|TileCollection|CharacterCollection|PromotionCollection)$"
+					},
+					{
+						"termID": "ContentType",
+						"validationRegEx": "^(Editorial|Suggested|SuggestedFrom|RelatedToTitle|RelatedToTitleFrom|RelatedToTitleForGenre|SuggestedForGenre|SuggestedForGenreFrom|TopList|PausedItems|ContinueWatching|PurchasedItems|WatchList)$"
+					},
+					{
+						"termID": "DefaultClientSortField",
+						"default": "Ordinal",
+						"exportDefault": "true",
+						"validationRegEx": "^(BroadcastDate|Name|Ordinal|Popularity)$"
+					},
+					{
+						"termID": "DefaultClientSortDirection",
+						"default": "Ascending",
+						"exportDefault": "true",
+						"validationRegEx": "^(Ascending|Descending)$"
+					},
+					{
+						"termID": "TopListID",
+						"validationRegEx": "^.*$"
+					},
+					{
+						"termID": "MaxItems",
+						"validationRegEx": "^.*$"
+					},
+					{
+						"termID": "ExcludeOptions",
+						"validationRegEx": "^.*$"
+					}
+				],
+				"classificationSchemes": {
+					"rootDir": "\\\\vt-w-p-obo00007\\10g\\cs\\lg",
+					"addSchemeFilesToDefault": [
+						{
+							"tvaElement": "Genre",
+							"file": "urn-libertyglobal-metadata-cs-ContentCS-2014_1.xml"
+						},
+						{
+							"tvaElement": "FileFormat",
+							"file": "urn-schange-metadata-cs-SoftLinkQualifierCS-2013.xml"
+						},
+						{
+							"tvaElement": "Genre",
+							"file": "urn-libertyglobal-RenderingHintsCS-2013.xml"
+						},
+						{
+							"tvaElement": "HowRelated",
+							"file": "urn-seachange-metadata-cs-DynamicHowrelatedCS-2012.xml"
+						},
+						{
+							"tvaElement": "HowRelated",
+							"file": "urn-eventis-metadata-cs-LogoTypeCS-2010.xml"
+						},
+						{
+							"tvaElement": "Genre",
+							"file": "urn-tva-metadata-cs-UPCEventGenreCS-2009.xml"
+						},
+						{
+							"tvaElement": "ServiceGenre",
+							"file": "urn-libertyglobal-metadata-cs-AppCS-2017.xml"
+						},
+						{
+							"tvaElement": "PurchaseType",
+							"file": "urn-libertyglobal-metadata-cs-PurchaseTypeCS-2013.xml"
+						}
+					],
+					"blockSchemesFromDefault": [
+						{
+							"tvaElement": "Genre",
+							"urn": "urn:tva:metadata:cs:ContentCS:2010"
+						}
+					],
+					"genreClassificationSchemes": [
+						"urn:libertyglobal:metadata:cs:ContentCS:2014_1"
+					],
+					"ageClassificationSchemes": [
+						"urn:eventis:metadata:cs:AgeCS:2010"
+					],
+					"audioMixTypeClassificationSchemes": [
+						"urn:eventis:metadata:cs:AudioPresentationCS:2010"
+					],
+					"pictureClassificationSchemes": [
+						"urn:schange:metadata:cs:DynamicHowRelatedCS:2012",
+						"urn:eventis:metadata:cs:LogoTypeCS:2010"
+					],
+					"customNodePropertyClassificationScheme": [
+						"urn:libertyglobal:RenderingHintsCS:2013"
+					]
+				},
+				"tstv": {
+					"tstvMarkerBlackoutMatchingRegEx": "^$",
+					"assetizingRules": [
+						{
+							"tag": "ABR_265_CatchUp_180Days",
+							"encodingProfileTag": "ABR_265",
+							"licenceWindow": {
+								"offset": "PT0M",
+								"duration": "P7DT12H"
+							},
+							"availabilityWindow": {
+								"start": {
+									"type": "RelativeToEventStart",
+									"offset": "PT0S"
+								},
+								"end": {
+									"type": "RelativeToEventEnd",
+									"offset": "P7D"
+								}
+							}
+						},
+						{
+							"tag": "ABR_265_CatchUp_90Days",
+							"encodingProfileTag": "ABR_265",
+							"licenceWindow": {
+								"offset": "PT0M",
+								"duration": "P7DT12H"
+							},
+							"availabilityWindow": {
+								"start": {
+									"type": "RelativeToEventStart",
+									"offset": "PT0S"
+								},
+								"end": {
+									"type": "RelativeToEventEnd",
+									"offset": "P7D"
+								}
+							}
+						},
+						{
+							"tag": "ABR_265_CatchUp_7Days",
+							"encodingProfileTag": "ABR_265",
+							"licenceWindow": {
+								"offset": "PT0M",
+								"duration": "P7DT12H"
+							},
+							"availabilityWindow": {
+								"start": {
+									"type": "RelativeToEventStart",
+									"offset": "PT0S"
+								},
+								"end": {
+									"type": "RelativeToEventEnd",
+									"offset": "P7D"
+								}
+							}
+						},
+						{
+							"tag": "ABR_265_CatchUp_3Days",
+							"encodingProfileTag": "ABR_265",
+							"licenceWindow": {
+								"offset": "PT0M",
+								"duration": "P3DT12H"
+							},
+							"availabilityWindow": {
+								"start": {
+									"type": "RelativeToEventStart",
+									"offset": "PT0S"
+								},
+								"end": {
+									"type": "RelativeToEventEnd",
+									"offset": "P3D"
+								}
+							}
+						},
+						{
+							"tag": "ABR_265_CatchUp_1Day",
+							"encodingProfileTag": "ABR_265",
+							"licenceWindow": {
+								"offset": "PT0M",
+								"duration": "P1DT12H"
+							},
+							"availabilityWindow": {
+								"start": {
+									"type": "RelativeToEventStart",
+									"offset": "PT0S"
+								},
+								"end": {
+									"type": "RelativeToEventEnd",
+									"offset": "P1D"
+								}
+							}
+						},
+						{
+							"tag": "ABR_265_CatchUp_1Day_TrickMode",
+							"encodingProfileTag": "ABR_265",
+							"licenceWindow": {
+								"offset": "PT0M",
+								"duration": "P1DT12H"
+							},
+							"availabilityWindow": {
+								"start": {
+									"type": "RelativeToEventStart",
+									"offset": "PT0S"
+								},
+								"end": {
+									"type": "RelativeToEventEnd",
+									"offset": "P1D"
+								}
+							},
+							"trickModes": [
+								"Forward"
+							]
+						}
+					],
+					"productizingRules": [
+						{
+							"tag": "DL-HD-001-000000-100018",
+							"productId": {
+								"crid": "crid://vtr.tv/Product_Replay_HD_1Day_100018_Mi_Pack"
+							},
+							"assetizingRules": [
+								"ABR_265_CatchUp_1Day"
+							],
+							"catalogIds": [
+								{
+									"crid": "crid://vtr.tv/node/replay-for-DL-HD-001-000000-100018"
+								}
+							]
+						},
+						{
+							"tag": "DL-HD-001-100000-100018",
+							"productId": {
+								"crid": "crid://vtr.tv/Product_Replay_HD_1Day_100018_Mi_Pack"
+							},
+							"assetizingRules": [
+								"ABR_265_CatchUp_1Day_TrickMode"
+							],
+							"catalogIds": [
+								{
+									"crid": "crid://vtr.tv/node/replay-for-DL-HD-001-100000-100018"
+								}
+							]
+						},
+						{
+							"tag": "DL-HD-003-000000-100018",
+							"productId": {
+								"crid": "crid://vtr.tv/Product_Replay_HD_3Days_100018_Mi_Pack"
+							},
+							"assetizingRules": [
+								"ABR_265_CatchUp_3Days"
+							],
+							"catalogIds": [
+								{
+									"crid": "crid://vtr.tv/node/replay-for-DL-HD-003-000000-100018"
+								}
+							]
+						},
+						{
+							"tag": "DL-HD-007-000000-100018",
+							"productId": {
+								"crid": "crid://vtr.tv/Product_Replay_HD_7Days_100018_Mi_Pack"
+							},
+							"assetizingRules": [
+								"ABR_265_CatchUp_7Days"
+							],
+							"catalogIds": [
+								{
+									"crid": "crid://vtr.tv/node/replay-for-DL-HD-007-000000-100018"
+								}
+							]
+						},
+						{
+							"tag": "DL-HD-090-000000-100018",
+							"productId": {
+								"crid": "crid://vtr.tv/Product_Replay_HD_90Days_100018_Mi_Pack"
+							},
+							"assetizingRules": [
+								"ABR_265_CatchUp_90Days"
+							],
+							"catalogIds": [
+								{
+									"crid": "crid://vtr.tv/node/replay-for-DL-HD-090-000000-100018"
+								}
+							]
+						},
+						{
+							"tag": "DL-HD-180-000000-100018",
+							"productId": {
+								"crid": "crid://vtr.tv/Product_Replay_HD_180Days_100018_Mi_Pack"
+							},
+							"assetizingRules": [
+								"ABR_265_CatchUp_180Days"
+							],
+							"catalogIds": [
+								{
+									"crid": "crid://vtr.tv/node/replay-for-DL-HD-180-000000-100018"
+								}
+							]
+						},
+						{
+							"tag": "DL-SD-001-000000-100018",
+							"productId": {
+								"crid": "crid://vtr.tv/Product_Replay_SD_1Day_100018_Mi_Pack"
+							},
+							"assetizingRules": [
+								"ABR_265_CatchUp_1Day"
+							],
+							"catalogIds": [
+								{
+									"crid": "crid://vtr.tv/node/replay-for-DL-SD-001-000000-100018"
+								}
+							]
+						},
+						{
+							"tag": "DL-SD-090-000000-100018",
+							"productId": {
+								"crid": "crid://vtr.tv/Product_Replay_SD_90Day_100018_Mi_Pack"
+							},
+							"assetizingRules": [
+								"ABR_265_CatchUp_90Days"
+							],
+							"catalogIds": [
+								{
+									"crid": "crid://vtr.tv/node/replay-for-DL-SD-090-000000-100018"
+								}
+							]
+						},
+						{
+							"tag": "DL-SD-180-000000-100018",
+							"productId": {
+								"crid": "crid://vtr.tv/Product_Replay_SD_180Day_100018_Mi_Pack"
+							},
+							"assetizingRules": [
+								"ABR_265_CatchUp_180Days"
+							],
+							"catalogIds": [
+								{
+									"crid": "crid://vtr.tv/node/replay-for-DL-SD-180-000000-100018"
+								}
+							]
+						},
+						{
+							"tag": "DL-SD-001-000000-100019",
+							"productId": {
+								"crid": "crid://vtr.tv/Product_Replay_SD_1Day_100019_Light_Nacional"
+							},
+							"assetizingRules": [
+								"ABR_265_CatchUp_1Day"
+							],
+							"catalogIds": [
+								{
+									"crid": "crid://vtr.tv/node/replay-for-DL-SD-001-000000-100019"
+								}
+							]
+						},
+						{
+							"tag": "DL-SD-001-100000-100019",
+							"productId": {
+								"crid": "crid://vtr.tv/Product_Replay_SD_1Day_100019_Light_Nacional"
+							},
+							"assetizingRules": [
+								"ABR_265_CatchUp_1Day_TrickMode"
+							],
+							"catalogIds": [
+								{
+									"crid": "crid://vtr.tv/node/replay-for-DL-SD-001-100000-100019"
+								}
+							]
+						},
+						{
+							"tag": "DL-SD-180-000000-100019",
+							"productId": {
+								"crid": "crid://vtr.tv/Product_Replay_SD_180Day_100019_Light_Nacional"
+							},
+							"assetizingRules": [
+								"ABR_265_CatchUp_180Days"
+							],
+							"catalogIds": [
+								{
+									"crid": "crid://vtr.tv/node/replay-for-DL-SD-180-000000-100019"
+								}
+							]
+						}
+					]
+				},
+				"edsCityIdMapping": [
+					{
+						"cityId": "13",
+						"channelMapGroup": "13",
+						"lsa": "Santiago"
+					},
+					{
+						"cityId": "15",
+						"channelMapGroup": "15",
+						"lsa": "Santiago"
+					},
+					{
+						"cityId": "8",
+						"channelMapGroup": "8",
+						"lsa": "Santiago"
+					}
+				]
+			},
+			"channels": [
+				{
+					"serviceId": "CL_13C_HD",
+					"name": "13C HD",
+					"languages": [
+						"ES"
+					],
+					"relatedMaterials": [
+						{
+							"mediaLocation": "http://staticqbr-cl-prod.vtrprod.cdn.dmdsdp.com/image-service/ImagesEPG/EventImages/13C_HD.png",
+							"mediaTemplate": "Focused logo"
+						}
+					],
+					"resolution": "HD",
+					"ingestRules": {
+						"eventMatchingPercentage": 95,
+						"regular": [
+							{
+								"ingesterName": "TVA Listings Ingest",
+								"ingestChannel": "1653044099"
+							}
+						]
+					},
+					"publishRules": [
+						{
+							"publisherName": "Pullbased Publisher"
+						},
+						{
+							"publisherName": "Pullbased Publisher",
+							"livestreamId": "LS_CL_13C_HD"
+						}
+					],
+					"modifierConfiguration": "AV - HD",
+					"livestreams": [
+						{
+							"livestreamId": "LS_CL_13C_HD",
+							"encodingProfile": "PLATFORM_EOS",
+							"serviceGroupIds": [
+								{
+									"crid": "crid://vtr.tv/LinearTestServiceGroup"
+								}
+							],
+							"name": {
+								"*": "13C HD"
+							},
+							"resolution": "HD"
+						}
+					]
+				},
+				{
+					"serviceId": "CL_24Horas_HD",
+					"name": "24 Horas HD",
+					"languages": [
+						"ES"
+					],
+					"relatedMaterials": [
+						{
+							"mediaLocation": "http://staticqbr-cl-prod.vtrprod.cdn.dmdsdp.com/image-service/ImagesEPG/EventImages/24Horas_HD.png",
+							"mediaTemplate": "Focused logo"
+						}
+					],
+					"resolution": "HD",
+					"ingestRules": {
+						"eventMatchingPercentage": 95,
+						"regular": [
+							{
+								"ingesterName": "TVA Listings Ingest",
+								"ingestChannel": "3272215135"
+							}
+						]
+					},
+					"publishRules": [
+						{
+							"publisherName": "Pullbased Publisher"
+						},
+						{
+							"publisherName": "Pullbased Publisher",
+							"livestreamId": "LS_CL_24Horas_HD"
+						}
+					],
+					"modifierConfiguration": "AV - HD",
+					"livestreams": [
+						{
+							"livestreamId": "LS_CL_24Horas_HD",
+							"encodingProfile": "PLATFORM_EOS",
+							"serviceGroupIds": [
+								{
+									"crid": "crid://vtr.tv/LinearTestServiceGroup"
+								}
+							],
+							"name": {
+								"*": "24 Horas HD"
+							},
+							"resolution": "HD"
+						}
+					]
+				},
+				{
+					"serviceId": "CL_AXN_HD",
+					"name": "AXN HD",
+					"languages": [
+						"ES"
+					],
+					"relatedMaterials": [
+						{
+							"mediaLocation": "http://staticqbr-cl-prod.vtrprod.cdn.dmdsdp.com/image-service/ImagesEPG/EventImages/AXN_HD.png",
+							"mediaTemplate": "Focused logo"
+						}
+					],
+					"resolution": "HD",
+					"ingestRules": {
+						"eventMatchingPercentage": 95,
+						"regular": [
+							{
+								"ingesterName": "TVA Listings Ingest",
+								"ingestChannel": "5546842456"
+							}
+						]
+					},
+					"publishRules": [
+						{
+							"publisherName": "Pullbased Publisher"
+						},
+						{
+							"publisherName": "Pullbased Publisher",
+							"livestreamId": "LS_CL_AXN_HD"
+						}
+					],
+					"modifierConfiguration": "AV - HD",
+					"livestreams": [
+						{
+							"livestreamId": "LS_CL_AXN_HD",
+							"encodingProfile": "PLATFORM_EOS",
+							"serviceGroupIds": [
+								{
+									"crid": "crid://vtr.tv/LinearTestServiceGroup"
+								}
+							],
+							"name": {
+								"*": "AXN HD"
+							},
+							"resolution": "HD"
+						}
+					]
+				},
+				{
+					"serviceId": "CL_Boomerang_HD",
+					"name": "Boomerang HD",
+					"languages": [
+						"ES"
+					],
+					"relatedMaterials": [
+						{
+							"mediaLocation": "http://staticqbr-cl-prod.vtrprod.cdn.dmdsdp.com/image-service/ImagesEPG/EventImages/Boomerang_HD.png",
+							"mediaTemplate": "Focused logo"
+						}
+					],
+					"resolution": "HD",
+					"ingestRules": {
+						"eventMatchingPercentage": 95,
+						"regular": [
+							{
+								"ingesterName": "TVA Listings Ingest",
+								"ingestChannel": "4505658347"
+							},
+							{
+								"ingesterName": "Catalog Ingester"
+							}
+						]
+					},
+					"publishRules": [
+						{
+							"publisherName": "Pullbased Publisher"
+						},
+						{
+							"publisherName": "Pullbased Publisher",
+							"livestreamId": "LS_CL_Boomerang_HD"
+						},
+						{
+							"publisherName": "TSTV - TVA 2 ProdisPA"
+						}
+					],
+					"modifierConfiguration": "AV - HD",
+					"guardTimePreOffset": 300000,
+					"guardTimePostOffset": 300000,
+					"livestreams": [
+						{
+							"livestreamId": "LS_CL_Boomerang_HD",
+							"encodingProfile": "PLATFORM_EOS",
+							"serviceGroupIds": [
+								{
+									"crid": "crid://vtr.tv/LinearTestServiceGroup"
+								}
+							],
+							"name": {
+								"*": "Boomerang HD"
+							},
+							"resolution": "HD"
+						}
+					]
+				},
+				{
+					"serviceId": "CL_CartoonNetwork_HD",
+					"name": "Cartoon Network HD",
+					"languages": [
+						"ES"
+					],
+					"relatedMaterials": [
+						{
+							"mediaLocation": "http://staticqbr-cl-prod.vtrprod.cdn.dmdsdp.com/image-service/ImagesEPG/EventImages/CartoonNetwork_HD.png",
+							"mediaTemplate": "Focused logo"
+						}
+					],
+					"resolution": "HD",
+					"ingestRules": {
+						"eventMatchingPercentage": 95,
+						"regular": [
+							{
+								"ingesterName": "TVA Listings Ingest",
+								"ingestChannel": "1612351388"
+							},
+							{
+								"ingesterName": "Catalog Ingester"
+							}
+						]
+					},
+					"publishRules": [
+						{
+							"publisherName": "Pullbased Publisher"
+						},
+						{
+							"publisherName": "Pullbased Publisher",
+							"livestreamId": "LS_CL_CartoonNetwork_HD"
+						},
+						{
+							"publisherName": "TSTV - TVA 2 ProdisPA"
+						}
+					],
+					"modifierConfiguration": "AV - HD",
+					"guardTimePreOffset": 300000,
+					"guardTimePostOffset": 300000,
+					"livestreams": [
+						{
+							"livestreamId": "LS_CL_CartoonNetwork_HD",
+							"encodingProfile": "PLATFORM_EOS",
+							"serviceGroupIds": [
+								{
+									"crid": "crid://vtr.tv/LinearTestServiceGroup"
+								}
+							],
+							"name": {
+								"*": "Cartoon Network HD"
+							},
+							"resolution": "HD"
+						}
+					]
+				},
+				{
+					"serviceId": "CL_Cinemax_HD",
+					"name": "Cinemax HD",
+					"languages": [
+						"ES"
+					],
+					"relatedMaterials": [
+						{
+							"mediaLocation": "http://staticqbr-cl-prod.vtrprod.cdn.dmdsdp.com/image-service/ImagesEPG/EventImages/Cinemax_HD.png",
+							"mediaTemplate": "Focused logo"
+						}
+					],
+					"resolution": "HD",
+					"ingestRules": {
+						"eventMatchingPercentage": 95,
+						"regular": [
+							{
+								"ingesterName": "TVA Listings Ingest",
+								"ingestChannel": "1419945862"
+							}
+						]
+					},
+					"publishRules": [
+						{
+							"publisherName": "Pullbased Publisher"
+						},
+						{
+							"publisherName": "Pullbased Publisher",
+							"livestreamId": "LS_CL_Cinemax_HD"
+						}
+					],
+					"modifierConfiguration": "AV - HD",
+					"livestreams": [
+						{
+							"livestreamId": "LS_CL_Cinemax_HD",
+							"encodingProfile": "PLATFORM_EOS",
+							"serviceGroupIds": [
+								{
+									"crid": "crid://vtr.tv/LinearTestServiceGroup"
+								}
+							],
+							"name": {
+								"*": "Cinemax HD"
+							},
+							"resolution": "HD"
+						}
+					]
+				},
+				{
+					"serviceId": "CL_DiscoveryChannel_HD",
+					"name": "Discovery Channel HD",
+					"languages": [
+						"ES"
+					],
+					"relatedMaterials": [
+						{
+							"mediaLocation": "http://staticqbr-cl-prod.vtrprod.cdn.dmdsdp.com/image-service/ImagesEPG/EventImages/DiscoveryChannel_HD.png",
+							"mediaTemplate": "Focused logo"
+						}
+					],
+					"resolution": "HD",
+					"ingestRules": {
+						"eventMatchingPercentage": 95,
+						"regular": [
+							{
+								"ingesterName": "TVA Listings Ingest",
+								"ingestChannel": "1483412889"
+							}
+						]
+					},
+					"publishRules": [
+						{
+							"publisherName": "Pullbased Publisher"
+						},
+						{
+							"publisherName": "Pullbased Publisher",
+							"livestreamId": "LS_CL_DiscoveryChannel_HD"
+						}
+					],
+					"modifierConfiguration": "AV - HD",
+					"livestreams": [
+						{
+							"livestreamId": "LS_CL_DiscoveryChannel_HD",
+							"encodingProfile": "PLATFORM_EOS",
+							"serviceGroupIds": [
+								{
+									"crid": "crid://vtr.tv/LinearTestServiceGroup"
+								}
+							],
+							"name": {
+								"*": "Discovery Channel HD"
+							},
+							"resolution": "HD"
+						}
+					]
+				},
+				{
+					"serviceId": "CL_Cinecanal_HD",
+					"name": "Cinecanal HD",
+					"languages": [
+						"ES"
+					],
+					"relatedMaterials": [
+						{
+							"mediaLocation": "http://staticqbr-cl-prod.vtrprod.cdn.dmdsdp.com/image-service/ImagesEPG/EventImages/Cinecanal_HD.png",
+							"mediaTemplate": "Focused logo"
+						}
+					],
+					"resolution": "HD",
+					"ingestRules": {
+						"eventMatchingPercentage": 95,
+						"regular": [
+							{
+								"ingesterName": "TVA Listings Ingest",
+								"ingestChannel": "3631348151"
+							}
+						]
+					},
+					"publishRules": [
+						{
+							"publisherName": "Pullbased Publisher"
+						},
+						{
+							"publisherName": "Pullbased Publisher",
+							"livestreamId": "LS_CL_Cinecanal_HD"
+						}
+					],
+					"modifierConfiguration": "AV - HD",
+					"livestreams": [
+						{
+							"livestreamId": "LS_CL_Cinecanal_HD",
+							"encodingProfile": "PLATFORM_EOS",
+							"serviceGroupIds": [
+								{
+									"crid": "crid://vtr.tv/LinearTestServiceGroup"
+								}
+							],
+							"name": {
+								"*": "Cinecanal HD"
+							},
+							"resolution": "HD"
+						}
+					]
+				},
+				{
+					"serviceId": "CL_CNN_Chile_HD",
+					"name": "CNN Chile HD",
+					"languages": [
+						"ES"
+					],
+					"relatedMaterials": [
+						{
+							"mediaLocation": "http://staticqbr-cl-prod.vtrprod.cdn.dmdsdp.com/image-service/ImagesEPG/EventImages/CNNChile_SD.png",
+							"mediaTemplate": "Focused logo"
+						}
+					],
+					"resolution": "HD",
+					"ingestRules": {
+						"eventMatchingPercentage": 95,
+						"regular": [
+							{
+								"ingesterName": "TVA Listings Ingest",
+								"ingestChannel": "4505665992"
+							}
+						]
+					},
+					"publishRules": [
+						{
+							"publisherName": "Pullbased Publisher"
+						},
+						{
+							"publisherName": "Pullbased Publisher",
+							"livestreamId": "LS_CL_CNN_Chile_HD"
+						}
+					],
+					"modifierConfiguration": "AV - HD",
+					"livestreams": [
+						{
+							"livestreamId": "LS_CL_CNN_Chile_HD",
+							"encodingProfile": "PLATFORM_EOS",
+							"serviceGroupIds": [
+								{
+									"crid": "crid://vtr.tv/LinearTestServiceGroup"
+								}
+							],
+							"name": {
+								"*": "CNN Chile HD"
+							},
+							"resolution": "HD"
+						}
+					]
+				},
+				{
+					"serviceId": "CL_ESPN2_HD",
+					"name": "ESPN 2 HD",
+					"languages": [
+						"ES"
+					],
+					"relatedMaterials": [
+						{
+							"mediaLocation": "http://staticqbr-cl-prod.vtrprod.cdn.dmdsdp.com/image-service/ImagesEPG/EventImages/ESPN2_HD.png",
+							"mediaTemplate": "Focused logo"
+						}
+					],
+					"resolution": "HD",
+					"ingestRules": {
+						"eventMatchingPercentage": 95,
+						"regular": [
+							{
+								"ingesterName": "TVA Listings Ingest",
+								"ingestChannel": "3141994412"
+							},
+							{
+								"ingesterName": "Catalog Ingester"
+							}
+						]
+					},
+					"publishRules": [
+						{
+							"publisherName": "Pullbased Publisher"
+						},
+						{
+							"publisherName": "Pullbased Publisher",
+							"livestreamId": "LS_CL_ESPN2_HD"
+						},
+						{
+							"publisherName": "TSTV - TVA 2 ProdisPA"
+						}
+					],
+					"modifierConfiguration": "AV - HD",
+					"guardTimePreOffset": 300000,
+					"guardTimePostOffset": 300000,
+					"livestreams": [
+						{
+							"livestreamId": "LS_CL_ESPN2_HD",
+							"encodingProfile": "PLATFORM_EOS",
+							"serviceGroupIds": [
+								{
+									"crid": "crid://vtr.tv/LinearTestServiceGroup"
+								}
+							],
+							"name": {
+								"*": "ESPN 2 HD"
+							},
+							"resolution": "HD"
+						}
+					]
+				},
+				{
+					"serviceId": "CL_ESPN3_HD",
+					"name": "ESPN 3 HD",
+					"languages": [
+						"ES"
+					],
+					"relatedMaterials": [
+						{
+							"mediaLocation": "http://staticqbr-cl-prod.vtrprod.cdn.dmdsdp.com/image-service/ImagesEPG/EventImages/ESPN3_HD.png",
+							"mediaTemplate": "Focused logo"
+						}
+					],
+					"resolution": "HD",
+					"ingestRules": {
+						"eventMatchingPercentage": 95,
+						"regular": [
+							{
+								"ingesterName": "TVA Listings Ingest",
+								"ingestChannel": "69045542"
+							}
+						]
+					},
+					"publishRules": [
+						{
+							"publisherName": "Pullbased Publisher"
+						},
+						{
+							"publisherName": "Pullbased Publisher",
+							"livestreamId": "LS_CL_ESPN3_HD"
+						}
+					],
+					"modifierConfiguration": "AV - HD",
+					"livestreams": [
+						{
+							"livestreamId": "LS_CL_ESPN3_HD",
+							"encodingProfile": "PLATFORM_EOS",
+							"serviceGroupIds": [
+								{
+									"crid": "crid://vtr.tv/LinearTestServiceGroup"
+								}
+							],
+							"name": {
+								"*": "ESPN 3 HD"
+							},
+							"resolution": "HD"
+						}
+					]
+				},
+				{
+					"serviceId": "CL_ESPN_HD",
+					"name": "ESPN HD",
+					"languages": [
+						"ES"
+					],
+					"relatedMaterials": [
+						{
+							"mediaLocation": "http://staticqbr-cl-prod.vtrprod.cdn.dmdsdp.com/image-service/ImagesEPG/EventImages/ESPN_HD.png",
+							"mediaTemplate": "Focused logo"
+						}
+					],
+					"resolution": "HD",
+					"ingestRules": {
+						"eventMatchingPercentage": 95,
+						"regular": [
+							{
+								"ingesterName": "TVA Listings Ingest",
+								"ingestChannel": "1818813108"
+							},
+							{
+								"ingesterName": "Catalog Ingester"
+							}
+						]
+					},
+					"publishRules": [
+						{
+							"publisherName": "Pullbased Publisher"
+						},
+						{
+							"publisherName": "Pullbased Publisher",
+							"livestreamId": "LS_CL_ESPN_HD"
+						},
+						{
+							"publisherName": "TSTV - TVA 2 ProdisPA"
+						}
+					],
+					"modifierConfiguration": "AV - HD",
+					"guardTimePreOffset": 300000,
+					"guardTimePostOffset": 300000,
+					"livestreams": [
+						{
+							"livestreamId": "LS_CL_ESPN_HD",
+							"encodingProfile": "PLATFORM_EOS",
+							"serviceGroupIds": [
+								{
+									"crid": "crid://vtr.tv/LinearTestServiceGroup"
+								}
+							],
+							"name": {
+								"*": "ESPN HD"
+							},
+							"resolution": "HD"
+						}
+					]
+				},
+				{
+					"serviceId": "CL_Fox_HD",
+					"name": "Fox HD",
+					"languages": [
+						"ES"
+					],
+					"relatedMaterials": [
+						{
+							"mediaLocation": "http://staticqbr-cl-prod.vtrprod.cdn.dmdsdp.com/image-service/ImagesEPG/EventImages/Fox_HD.png",
+							"mediaTemplate": "Focused logo"
+						}
+					],
+					"resolution": "HD",
+					"ingestRules": {
+						"eventMatchingPercentage": 95,
+						"regular": [
+							{
+								"ingesterName": "TVA Listings Ingest",
+								"ingestChannel": "4075607817"
+							}
+						]
+					},
+					"publishRules": [
+						{
+							"publisherName": "Pullbased Publisher"
+						},
+						{
+							"publisherName": "Pullbased Publisher",
+							"livestreamId": "LS_CL_Fox_HD"
+						}
+					],
+					"modifierConfiguration": "AV - HD",
+					"livestreams": [
+						{
+							"livestreamId": "LS_CL_Fox_HD",
+							"encodingProfile": "PLATFORM_EOS",
+							"serviceGroupIds": [
+								{
+									"crid": "crid://vtr.tv/LinearTestServiceGroup"
+								}
+							],
+							"name": {
+								"*": "Fox HD"
+							},
+							"resolution": "HD"
+						}
+					]
+				},
+				{
+					"serviceId": "CL_FoxLife_HD",
+					"name": "Fox Life HD",
+					"languages": [
+						"ES"
+					],
+					"relatedMaterials": [
+						{
+							"mediaLocation": "http://staticqbr-cl-prod.vtrprod.cdn.dmdsdp.com/image-service/ImagesEPG/EventImages/FoxLife_HD.png",
+							"mediaTemplate": "Focused logo"
+						}
+					],
+					"resolution": "HD",
+					"ingestRules": {
+						"eventMatchingPercentage": 95,
+						"regular": [
+							{
+								"ingesterName": "TVA Listings Ingest",
+								"ingestChannel": "3141999492"
+							}
+						]
+					},
+					"publishRules": [
+						{
+							"publisherName": "Pullbased Publisher"
+						},
+						{
+							"publisherName": "Pullbased Publisher",
+							"livestreamId": "LS_CL_FoxLife_HD"
+						}
+					],
+					"modifierConfiguration": "AV - HD",
+					"livestreams": [
+						{
+							"livestreamId": "LS_CL_FoxLife_HD",
+							"encodingProfile": "PLATFORM_EOS",
+							"serviceGroupIds": [
+								{
+									"crid": "crid://vtr.tv/LinearTestServiceGroup"
+								}
+							],
+							"name": {
+								"*": "Fox Life HD"
+							},
+							"resolution": "HD"
+						}
+					]
+				},
+				{
+					"serviceId": "CL_FX_HD",
+					"name": "FX HD",
+					"languages": [
+						"ES"
+					],
+					"relatedMaterials": [
+						{
+							"mediaLocation": "http://staticqbr-cl-prod.vtrprod.cdn.dmdsdp.com/image-service/ImagesEPG/EventImages/FX_HD.png",
+							"mediaTemplate": "Focused logo"
+						}
+					],
+					"resolution": "HD",
+					"ingestRules": {
+						"eventMatchingPercentage": 95,
+						"regular": [
+							{
+								"ingesterName": "TVA Listings Ingest",
+								"ingestChannel": "1897399696"
+							}
+						]
+					},
+					"publishRules": [
+						{
+							"publisherName": "Pullbased Publisher"
+						},
+						{
+							"publisherName": "Pullbased Publisher",
+							"livestreamId": "LS_CL_FX_HD"
+						}
+					],
+					"modifierConfiguration": "AV - HD",
+					"livestreams": [
+						{
+							"livestreamId": "LS_CL_FX_HD",
+							"encodingProfile": "PLATFORM_EOS",
+							"serviceGroupIds": [
+								{
+									"crid": "crid://vtr.tv/LinearTestServiceGroup"
+								}
+							],
+							"name": {
+								"*": "FX HD"
+							},
+							"resolution": "HD"
+						}
+					]
+				},
+				{
+					"serviceId": "CL_GolTV_HD",
+					"name": "Gol TV HD",
+					"languages": [
+						"ES"
+					],
+					"relatedMaterials": [
+						{
+							"mediaLocation": "http://staticqbr-cl-prod.vtrprod.cdn.dmdsdp.com/image-service/ImagesEPG/EventImages/GolTV_HD.png",
+							"mediaTemplate": "Focused logo"
+						}
+					],
+					"resolution": "HD",
+					"ingestRules": {
+						"eventMatchingPercentage": 95,
+						"regular": [
+							{
+								"ingesterName": "TVA Listings Ingest",
+								"ingestChannel": "1419807144"
+							}
+						]
+					},
+					"publishRules": [
+						{
+							"publisherName": "Pullbased Publisher"
+						},
+						{
+							"publisherName": "Pullbased Publisher",
+							"livestreamId": "LS_CL_GolTV_HD"
+						}
+					],
+					"modifierConfiguration": "AV - HD",
+					"livestreams": [
+						{
+							"livestreamId": "LS_CL_GolTV_HD",
+							"encodingProfile": "PLATFORM_EOS",
+							"serviceGroupIds": [
+								{
+									"crid": "crid://vtr.tv/LinearTestServiceGroup"
+								}
+							],
+							"name": {
+								"*": "Gol TV HD"
+							},
+							"resolution": "HD"
+						}
+					]
+				},
+				{
+					"serviceId": "CL_HBO_HD",
+					"name": "HBO HD",
+					"languages": [
+						"ES"
+					],
+					"relatedMaterials": [
+						{
+							"mediaLocation": "http://staticqbr-cl-prod.vtrprod.cdn.dmdsdp.com/image-service/ImagesEPG/EventImages/HBO_HD.png",
+							"mediaTemplate": "Focused logo"
+						}
+					],
+					"resolution": "HD",
+					"ingestRules": {
+						"eventMatchingPercentage": 95,
+						"regular": [
+							{
+								"ingesterName": "TVA Listings Ingest",
+								"ingestChannel": "69046965"
+							},
+							{
+								"ingesterName": "Catalog Ingester"
+							}
+						]
+					},
+					"publishRules": [
+						{
+							"publisherName": "Pullbased Publisher"
+						},
+						{
+							"publisherName": "Pullbased Publisher",
+							"livestreamId": "LS_CL_HBO_HD"
+						},
+						{
+							"publisherName": "TSTV - TVA 2 ProdisPA"
+						}
+					],
+					"modifierConfiguration": "AV - HD",
+					"guardTimePreOffset": 300000,
+					"guardTimePostOffset": 300000,
+					"livestreams": [
+						{
+							"livestreamId": "LS_CL_HBO_HD",
+							"encodingProfile": "PLATFORM_EOS",
+							"serviceGroupIds": [
+								{
+									"crid": "crid://vtr.tv/LinearTestServiceGroup"
+								}
+							],
+							"name": {
+								"*": "HBO HD"
+							},
+							"resolution": "HD"
+						}
+					]
+				},
+				{
+					"serviceId": "CL_NationalGeographic_HD",
+					"name": "National Geographic HD",
+					"languages": [
+						"ES"
+					],
+					"relatedMaterials": [
+						{
+							"mediaLocation": "http://staticqbr-cl-prod.vtrprod.cdn.dmdsdp.com/image-service/ImagesEPG/EventImages/NationalGeographic_HD.png",
+							"mediaTemplate": "Focused logo"
+						}
+					],
+					"resolution": "HD",
+					"ingestRules": {
+						"eventMatchingPercentage": 95,
+						"regular": [
+							{
+								"ingesterName": "TVA Listings Ingest",
+								"ingestChannel": "3930404714"
+							}
+						]
+					},
+					"publishRules": [
+						{
+							"publisherName": "Pullbased Publisher"
+						},
+						{
+							"publisherName": "Pullbased Publisher",
+							"livestreamId": "LS_CL_NationalGeographic_HD"
+						}
+					],
+					"modifierConfiguration": "AV - HD",
+					"livestreams": [
+						{
+							"livestreamId": "LS_CL_NationalGeographic_HD",
+							"encodingProfile": "PLATFORM_EOS",
+							"serviceGroupIds": [
+								{
+									"crid": "crid://vtr.tv/LinearTestServiceGroup"
+								}
+							],
+							"name": {
+								"*": "National Geographic HD"
+							},
+							"resolution": "HD"
+						}
+					]
+				},
+				{
+					"serviceId": "CL_Foxactions_HD",
+					"name": "Fox actions HD",
+					"languages": [
+						"ES"
+					],
+					"relatedMaterials": [
+						{
+							"mediaLocation": "http://staticqbr-cl-prod.vtrprod.cdn.dmdsdp.com/image-service/ImagesEPG/EventImages/Foxactions_HD.png",
+							"mediaTemplate": "Focused logo"
+						}
+					],
+					"resolution": "HD",
+					"ingestRules": {
+						"eventMatchingPercentage": 95,
+						"regular": [
+							{
+								"ingesterName": "TVA Listings Ingest",
+								"ingestChannel": "69043992"
+							}
+						]
+					},
+					"publishRules": [
+						{
+							"publisherName": "Pullbased Publisher"
+						},
+						{
+							"publisherName": "Pullbased Publisher",
+							"livestreamId": "LS_CL_Foxactions_HD"
+						}
+					],
+					"modifierConfiguration": "AV - HD",
+					"livestreams": [
+						{
+							"livestreamId": "LS_CL_Foxactions_HD",
+							"encodingProfile": "PLATFORM_EOS",
+							"serviceGroupIds": [
+								{
+									"crid": "crid://vtr.tv/LinearTestServiceGroup"
+								}
+							],
+							"name": {
+								"*": "Fox actions HD"
+							},
+							"resolution": "HD"
+						}
+					]
+				},
+				{
+					"serviceId": "CL_FoxFamily_HD",
+					"name": "Fox Family HD",
+					"languages": [
+						"ES"
+					],
+					"relatedMaterials": [
+						{
+							"mediaLocation": "http://staticqbr-cl-prod.vtrprod.cdn.dmdsdp.com/image-service/ImagesEPG/EventImages/FoxFamily_HD.png",
+							"mediaTemplate": "Focused logo"
+						}
+					],
+					"resolution": "HD",
+					"ingestRules": {
+						"eventMatchingPercentage": 95,
+						"regular": [
+							{
+								"ingesterName": "TVA Listings Ingest",
+								"ingestChannel": "648906382"
+							}
+						]
+					},
+					"publishRules": [
+						{
+							"publisherName": "Pullbased Publisher"
+						},
+						{
+							"publisherName": "Pullbased Publisher",
+							"livestreamId": "LS_CL_FoxFamily_HD"
+						}
+					],
+					"modifierConfiguration": "AV - HD",
+					"livestreams": [
+						{
+							"livestreamId": "LS_CL_FoxFamily_HD",
+							"encodingProfile": "PLATFORM_EOS",
+							"serviceGroupIds": [
+								{
+									"crid": "crid://vtr.tv/LinearTestServiceGroup"
+								}
+							],
+							"name": {
+								"*": "Fox Family HD"
+							},
+							"resolution": "HD"
+						}
+					]
+				},
+				{
+					"serviceId": "CL_Space_HD",
+					"name": "Space HD",
+					"languages": [
+						"ES"
+					],
+					"relatedMaterials": [
+						{
+							"mediaLocation": "http://staticqbr-cl-prod.vtrprod.cdn.dmdsdp.com/image-service/ImagesEPG/EventImages/Space_HD.png",
+							"mediaTemplate": "Focused logo"
+						}
+					],
+					"resolution": "HD",
+					"ingestRules": {
+						"eventMatchingPercentage": 95,
+						"regular": [
+							{
+								"ingesterName": "TVA Listings Ingest",
+								"ingestChannel": "1419817466"
+							},
+							{
+								"ingesterName": "Catalog Ingester"
+							}
+						]
+					},
+					"publishRules": [
+						{
+							"publisherName": "Pullbased Publisher"
+						},
+						{
+							"publisherName": "Pullbased Publisher",
+							"livestreamId": "LS_CL_Space_HD"
+						},
+						{
+							"publisherName": "TSTV - TVA 2 ProdisPA"
+						}
+					],
+					"modifierConfiguration": "AV - HD",
+					"guardTimePreOffset": 300000,
+					"guardTimePostOffset": 300000,
+					"livestreams": [
+						{
+							"livestreamId": "LS_CL_Space_HD",
+							"encodingProfile": "PLATFORM_EOS",
+							"serviceGroupIds": [
+								{
+									"crid": "crid://vtr.tv/LinearTestServiceGroup"
+								}
+							],
+							"name": {
+								"*": "Space HD"
+							},
+							"resolution": "HD"
+						}
+					]
+				},
+				{
+					"serviceId": "CL_FoxSeries_HD",
+					"name": "Fox Series HD",
+					"languages": [
+						"ES"
+					],
+					"relatedMaterials": [
+						{
+							"mediaLocation": "http://staticqbr-cl-prod.vtrprod.cdn.dmdsdp.com/image-service/ImagesEPG/EventImages/FoxSeries_HD.png",
+							"mediaTemplate": "Focused logo"
+						}
+					],
+					"resolution": "HD",
+					"ingestRules": {
+						"eventMatchingPercentage": 95,
+						"regular": [
+							{
+								"ingesterName": "TVA Listings Ingest",
+								"ingestChannel": "69031722"
+							}
+						]
+					},
+					"publishRules": [
+						{
+							"publisherName": "Pullbased Publisher"
+						},
+						{
+							"publisherName": "Pullbased Publisher",
+							"livestreamId": "LS_CL_FoxSeries_HD"
+						}
+					],
+					"modifierConfiguration": "AV - HD",
+					"livestreams": [
+						{
+							"livestreamId": "LS_CL_FoxSeries_HD",
+							"encodingProfile": "PLATFORM_EOS",
+							"serviceGroupIds": [
+								{
+									"crid": "crid://vtr.tv/LinearTestServiceGroup"
+								}
+							],
+							"name": {
+								"*": "Fox Series HD"
+							},
+							"resolution": "HD"
+						}
+					]
+				},
+				{
+					"serviceId": "CL_Foxsports1_HD",
+					"name": "Fox sports 1 HD",
+					"languages": [
+						"ES"
+					],
+					"relatedMaterials": [
+						{
+							"mediaLocation": "http://staticqbr-cl-prod.vtrprod.cdn.dmdsdp.com/image-service/ImagesEPG/EventImages/Foxsports1_HD.png",
+							"mediaTemplate": "Focused logo"
+						}
+					],
+					"resolution": "HD",
+					"ingestRules": {
+						"eventMatchingPercentage": 95,
+						"regular": [
+							{
+								"ingesterName": "TVA Listings Ingest",
+								"ingestChannel": "1489286138"
+							}
+						]
+					},
+					"publishRules": [
+						{
+							"publisherName": "Pullbased Publisher"
+						},
+						{
+							"publisherName": "Pullbased Publisher",
+							"livestreamId": "LS_CL_Foxsports1_HD"
+						}
+					],
+					"modifierConfiguration": "AV - HD",
+					"livestreams": [
+						{
+							"livestreamId": "LS_CL_Foxsports1_HD",
+							"encodingProfile": "PLATFORM_EOS",
+							"serviceGroupIds": [
+								{
+									"crid": "crid://vtr.tv/LinearTestServiceGroup"
+								}
+							],
+							"name": {
+								"*": "Fox sports 1 HD"
+							},
+							"resolution": "HD"
+						}
+					]
+				},
+				{
+					"serviceId": "CL_FoxSports2_HD",
+					"name": "Fox Sports 2 HD",
+					"languages": [
+						"ES"
+					],
+					"relatedMaterials": [
+						{
+							"mediaLocation": "http://staticqbr-cl-prod.vtrprod.cdn.dmdsdp.com/image-service/ImagesEPG/EventImages/FoxSports2_HD.png",
+							"mediaTemplate": "Focused logo"
+						}
+					],
+					"resolution": "HD",
+					"ingestRules": {
+						"eventMatchingPercentage": 95,
+						"regular": [
+							{
+								"ingesterName": "TVA Listings Ingest",
+								"ingestChannel": "1134869025"
+							}
+						]
+					},
+					"publishRules": [
+						{
+							"publisherName": "Pullbased Publisher"
+						},
+						{
+							"publisherName": "Pullbased Publisher",
+							"livestreamId": "LS_CL_FoxSports2_HD"
+						}
+					],
+					"modifierConfiguration": "AV - HD",
+					"livestreams": [
+						{
+							"livestreamId": "LS_CL_FoxSports2_HD",
+							"encodingProfile": "PLATFORM_EOS",
+							"serviceGroupIds": [
+								{
+									"crid": "crid://vtr.tv/LinearTestServiceGroup"
+								}
+							],
+							"name": {
+								"*": "Fox Sports 2 HD"
+							},
+							"resolution": "HD"
+						}
+					]
+				},
+				{
+					"serviceId": "CL_StudioUniversal_HD",
+					"name": "Studio Universal HD",
+					"languages": [
+						"ES"
+					],
+					"relatedMaterials": [
+						{
+							"mediaLocation": "http://staticqbr-cl-prod.vtrprod.cdn.dmdsdp.com/image-service/ImagesEPG/EventImages/StudioUniversal_HD.png",
+							"mediaTemplate": "Focused logo"
+						}
+					],
+					"resolution": "HD",
+					"ingestRules": {
+						"eventMatchingPercentage": 95,
+						"regular": [
+							{
+								"ingesterName": "TVA Listings Ingest",
+								"ingestChannel": "4866434573"
+							},
+							{
+								"ingesterName": "Catalog Ingester"
+							}
+						]
+					},
+					"publishRules": [
+						{
+							"publisherName": "Pullbased Publisher"
+						},
+						{
+							"publisherName": "Pullbased Publisher",
+							"livestreamId": "LS_CL_StudioUniversal_HD"
+						},
+						{
+							"publisherName": "TSTV - TVA 2 ProdisPA"
+						}
+					],
+					"modifierConfiguration": "AV - HD",
+					"guardTimePreOffset": 300000,
+					"guardTimePostOffset": 300000,
+					"livestreams": [
+						{
+							"livestreamId": "LS_CL_StudioUniversal_HD",
+							"encodingProfile": "PLATFORM_EOS",
+							"serviceGroupIds": [
+								{
+									"crid": "crid://vtr.tv/LinearTestServiceGroup"
+								}
+							],
+							"name": {
+								"*": "Studio Universal HD"
+							},
+							"resolution": "HD"
+						}
+					]
+				},
+				{
+					"serviceId": "CL_TNT_HD",
+					"name": "TNT HD",
+					"languages": [
+						"ES"
+					],
+					"relatedMaterials": [
+						{
+							"mediaLocation": "http://staticqbr-cl-prod.vtrprod.cdn.dmdsdp.com/image-service/ImagesEPG/EventImages/TNT_HD.png",
+							"mediaTemplate": "Focused logo"
+						}
+					],
+					"resolution": "HD",
+					"ingestRules": {
+						"eventMatchingPercentage": 95,
+						"regular": [
+							{
+								"ingesterName": "TVA Listings Ingest",
+								"ingestChannel": "4160409402"
+							},
+							{
+								"ingesterName": "Catalog Ingester"
+							}
+						]
+					},
+					"publishRules": [
+						{
+							"publisherName": "Pullbased Publisher"
+						},
+						{
+							"publisherName": "Pullbased Publisher",
+							"livestreamId": "LS_CL_TNT_HD"
+						},
+						{
+							"publisherName": "TSTV - TVA 2 ProdisPA"
+						}
+					],
+					"modifierConfiguration": "AV - HD",
+					"guardTimePreOffset": 300000,
+					"guardTimePostOffset": 300000,
+					"livestreams": [
+						{
+							"livestreamId": "LS_CL_TNT_HD",
+							"encodingProfile": "PLATFORM_EOS",
+							"serviceGroupIds": [
+								{
+									"crid": "crid://vtr.tv/LinearTestServiceGroup"
+								}
+							],
+							"name": {
+								"*": "TNT HD"
+							},
+							"resolution": "HD"
+						}
+					]
+				},
+				{
+					"serviceId": "CL_HBOfamily_HD",
+					"name": "HBO family HD",
+					"languages": [
+						"ES"
+					],
+					"relatedMaterials": [
+						{
+							"mediaLocation": "http://staticqbr-cl-prod.vtrprod.cdn.dmdsdp.com/image-service/ImagesEPG/EventImages/HBOfamily_HD.png",
+							"mediaTemplate": "Focused logo"
+						}
+					],
+					"resolution": "HD",
+					"ingestRules": {
+						"eventMatchingPercentage": 95,
+						"regular": [
+							{
+								"ingesterName": "TVA Listings Ingest",
+								"ingestChannel": "441697453"
+							}
+						]
+					},
+					"publishRules": [
+						{
+							"publisherName": "Pullbased Publisher"
+						},
+						{
+							"publisherName": "Pullbased Publisher",
+							"livestreamId": "LS_CL_HBOfamily_HD"
+						}
+					],
+					"modifierConfiguration": "AV - HD",
+					"livestreams": [
+						{
+							"livestreamId": "LS_CL_HBOfamily_HD",
+							"encodingProfile": "PLATFORM_EOS",
+							"serviceGroupIds": [
+								{
+									"crid": "crid://vtr.tv/LinearTestServiceGroup"
+								}
+							],
+							"name": {
+								"*": "HBO family HD"
+							},
+							"resolution": "HD"
+						}
+					]
+				},
+				{
+					"serviceId": "CL_TNTSeries_HD",
+					"name": "TNT Series HD",
+					"languages": [
+						"ES"
+					],
+					"relatedMaterials": [
+						{
+							"mediaLocation": "http://staticqbr-cl-prod.vtrprod.cdn.dmdsdp.com/image-service/ImagesEPG/EventImages/TNTSeries_HD.png",
+							"mediaTemplate": "Focused logo"
+						}
+					],
+					"resolution": "HD",
+					"ingestRules": {
+						"eventMatchingPercentage": 95,
+						"regular": [
+							{
+								"ingesterName": "TVA Listings Ingest",
+								"ingestChannel": "1462684619"
+							}
+						]
+					},
+					"publishRules": [
+						{
+							"publisherName": "Pullbased Publisher"
+						},
+						{
+							"publisherName": "Pullbased Publisher",
+							"livestreamId": "LS_CL_TNTSeries_HD"
+						}
+					],
+					"modifierConfiguration": "AV - HD",
+					"livestreams": [
+						{
+							"livestreamId": "LS_CL_TNTSeries_HD",
+							"encodingProfile": "PLATFORM_EOS",
+							"serviceGroupIds": [
+								{
+									"crid": "crid://vtr.tv/LinearTestServiceGroup"
+								}
+							],
+							"name": {
+								"*": "TNT Series HD"
+							},
+							"resolution": "HD"
+						}
+					]
+				},
+				{
+					"serviceId": "CL_UniversalChannel_HD",
+					"name": "Universal Channel HD",
+					"languages": [
+						"ES"
+					],
+					"relatedMaterials": [
+						{
+							"mediaLocation": "http://staticqbr-cl-prod.vtrprod.cdn.dmdsdp.com/image-service/ImagesEPG/EventImages/UniversalChannel_HD.png",
+							"mediaTemplate": "Focused logo"
+						}
+					],
+					"resolution": "HD",
+					"ingestRules": {
+						"eventMatchingPercentage": 95,
+						"regular": [
+							{
+								"ingesterName": "TVA Listings Ingest",
+								"ingestChannel": "69038904"
+							}
+						]
+					},
+					"publishRules": [
+						{
+							"publisherName": "Pullbased Publisher"
+						},
+						{
+							"publisherName": "Pullbased Publisher",
+							"livestreamId": "LS_CL_UniversalChannel_HD"
+						}
+					],
+					"modifierConfiguration": "AV - HD",
+					"livestreams": [
+						{
+							"livestreamId": "LS_CL_UniversalChannel_HD",
+							"encodingProfile": "PLATFORM_EOS",
+							"serviceGroupIds": [
+								{
+									"crid": "crid://vtr.tv/LinearTestServiceGroup"
+								}
+							],
+							"name": {
+								"*": "Universal Channel HD"
+							},
+							"resolution": "HD"
+						}
+					]
+				},
+				{
+					"serviceId": "CL_Maxprime_HD",
+					"name": "Max prime HD",
+					"languages": [
+						"ES"
+					],
+					"relatedMaterials": [
+						{
+							"mediaLocation": "http://staticqbr-cl-prod.vtrprod.cdn.dmdsdp.com/image-service/ImagesEPG/EventImages/Maxprime_HD.png",
+							"mediaTemplate": "Focused logo"
+						}
+					],
+					"resolution": "HD",
+					"ingestRules": {
+						"eventMatchingPercentage": 95,
+						"regular": [
+							{
+								"ingesterName": "TVA Listings Ingest",
+								"ingestChannel": "444082240"
+							}
+						]
+					},
+					"publishRules": [
+						{
+							"publisherName": "Pullbased Publisher"
+						},
+						{
+							"publisherName": "Pullbased Publisher",
+							"livestreamId": "LS_CL_Maxprime_HD"
+						}
+					],
+					"modifierConfiguration": "AV - HD",
+					"livestreams": [
+						{
+							"livestreamId": "LS_CL_Maxprime_HD",
+							"encodingProfile": "PLATFORM_EOS",
+							"serviceGroupIds": [
+								{
+									"crid": "crid://vtr.tv/LinearTestServiceGroup"
+								}
+							],
+							"name": {
+								"*": "Max prime HD"
+							},
+							"resolution": "HD"
+						}
+					]
+				},
+				{
+					"serviceId": "CL_MTV_HD",
+					"name": "MTV HD",
+					"languages": [
+						"ES"
+					],
+					"relatedMaterials": [
+						{
+							"mediaLocation": "http://staticqbr-cl-prod.vtrprod.cdn.dmdsdp.com/image-service/ImagesEPG/EventImages/MTV_HD.png",
+							"mediaTemplate": "Focused logo"
+						}
+					],
+					"resolution": "HD",
+					"ingestRules": {
+						"eventMatchingPercentage": 95,
+						"regular": [
+							{
+								"ingesterName": "TVA Listings Ingest",
+								"ingestChannel": "3142060765"
+							}
+						]
+					},
+					"publishRules": [
+						{
+							"publisherName": "Pullbased Publisher"
+						},
+						{
+							"publisherName": "Pullbased Publisher",
+							"livestreamId": "LS_CL_MTV_HD"
+						}
+					],
+					"modifierConfiguration": "AV - HD",
+					"livestreams": [
+						{
+							"livestreamId": "LS_CL_MTV_HD",
+							"encodingProfile": "PLATFORM_EOS",
+							"serviceGroupIds": [
+								{
+									"crid": "crid://vtr.tv/LinearTestServiceGroup"
+								}
+							],
+							"name": {
+								"*": "MTV HD"
+							},
+							"resolution": "HD"
+						}
+					]
+				},
+				{
+					"serviceId": "CL_NatGeoKids_HD",
+					"name": "Nat Geo Kids HD",
+					"languages": [
+						"ES"
+					],
+					"relatedMaterials": [
+						{
+							"mediaLocation": "http://staticqbr-cl-prod.vtrprod.cdn.dmdsdp.com/image-service/ImagesEPG/EventImages/NatGeoKids_HD.png",
+							"mediaTemplate": "Focused logo"
+						}
+					],
+					"resolution": "HD",
+					"ingestRules": {
+						"eventMatchingPercentage": 95,
+						"regular": [
+							{
+								"ingesterName": "TVA Listings Ingest",
+								"ingestChannel": "5397722892"
+							}
+						]
+					},
+					"publishRules": [
+						{
+							"publisherName": "Pullbased Publisher"
+						},
+						{
+							"publisherName": "Pullbased Publisher",
+							"livestreamId": "LS_CL_NatGeoKids_HD"
+						}
+					],
+					"modifierConfiguration": "AV - HD",
+					"livestreams": [
+						{
+							"livestreamId": "LS_CL_NatGeoKids_HD",
+							"encodingProfile": "PLATFORM_EOS",
+							"serviceGroupIds": [
+								{
+									"crid": "crid://vtr.tv/LinearTestServiceGroup"
+								}
+							],
+							"name": {
+								"*": "Nat Geo Kids HD"
+							},
+							"resolution": "HD"
+						}
+					]
+				},
+				{
+					"serviceId": "CL_Playboy_HD",
+					"name": "Playboy HD",
+					"languages": [
+						"ES"
+					],
+					"relatedMaterials": [
+						{
+							"mediaLocation": "http://staticqbr-cl-prod.vtrprod.cdn.dmdsdp.com/image-service/ImagesEPG/EventImages/Playboy_HD.png",
+							"mediaTemplate": "Focused logo"
+						}
+					],
+					"resolution": "HD",
+					"ingestRules": {
+						"eventMatchingPercentage": 95,
+						"regular": [
+							{
+								"ingesterName": "TVA Listings Ingest",
+								"ingestChannel": "69039814"
+							}
+						]
+					},
+					"publishRules": [
+						{
+							"publisherName": "Pullbased Publisher"
+						},
+						{
+							"publisherName": "Pullbased Publisher",
+							"livestreamId": "LS_CL_Playboy_HD"
+						}
+					],
+					"modifierConfiguration": "AV - HD",
+					"livestreams": [
+						{
+							"livestreamId": "LS_CL_Playboy_HD",
+							"encodingProfile": "PLATFORM_EOS",
+							"serviceGroupIds": [
+								{
+									"crid": "crid://vtr.tv/LinearTestServiceGroup"
+								}
+							],
+							"name": {
+								"*": "Playboy HD"
+							},
+							"resolution": "HD"
+						}
+					]
+				},
+				{
+					"serviceId": "CL_TruTV_HD",
+					"name": "Tru TV HD",
+					"languages": [
+						"ES"
+					],
+					"relatedMaterials": [
+						{
+							"mediaLocation": "http://staticqbr-cl-prod.vtrprod.cdn.dmdsdp.com/image-service/ImagesEPG/EventImages/TruTV_HD.png",
+							"mediaTemplate": "Focused logo"
+						}
+					],
+					"resolution": "HD",
+					"ingestRules": {
+						"eventMatchingPercentage": 95,
+						"regular": [
+							{
+								"ingesterName": "TVA Listings Ingest",
+								"ingestChannel": "69038903"
+							},
+							{
+								"ingesterName": "Catalog Ingester"
+							}
+						]
+					},
+					"publishRules": [
+						{
+							"publisherName": "Pullbased Publisher"
+						},
+						{
+							"publisherName": "Pullbased Publisher",
+							"livestreamId": "LS_CL_TruTV_HD"
+						},
+						{
+							"publisherName": "TSTV - TVA 2 ProdisPA"
+						}
+					],
+					"modifierConfiguration": "AV - HD",
+					"guardTimePreOffset": 300000,
+					"guardTimePostOffset": 300000,
+					"livestreams": [
+						{
+							"livestreamId": "LS_CL_TruTV_HD",
+							"encodingProfile": "PLATFORM_EOS",
+							"serviceGroupIds": [
+								{
+									"crid": "crid://vtr.tv/LinearTestServiceGroup"
+								}
+							],
+							"name": {
+								"*": "Tru TV HD"
+							},
+							"resolution": "HD"
+						}
+					]
+				},
+				{
+					"serviceId": "CL_TyC_HD",
+					"name": "TyC HD",
+					"languages": [
+						"ES"
+					],
+					"relatedMaterials": [
+						{
+							"mediaLocation": "http://staticqbr-cl-prod.vtrprod.cdn.dmdsdp.com/image-service/ImagesEPG/EventImages/TyC_HD.png",
+							"mediaTemplate": "Focused logo"
+						}
+					],
+					"resolution": "HD",
+					"ingestRules": {
+						"eventMatchingPercentage": 95,
+						"regular": [
+							{
+								"ingesterName": "TVA Listings Ingest",
+								"ingestChannel": "1423005451"
+							}
+						]
+					},
+					"publishRules": [
+						{
+							"publisherName": "Pullbased Publisher"
+						},
+						{
+							"publisherName": "Pullbased Publisher",
+							"livestreamId": "LS_CL_TyC_HD"
+						}
+					],
+					"modifierConfiguration": "AV - HD",
+					"livestreams": [
+						{
+							"livestreamId": "LS_CL_TyC_HD",
+							"encodingProfile": "PLATFORM_EOS",
+							"serviceGroupIds": [
+								{
+									"crid": "crid://vtr.tv/LinearTestServiceGroup"
+								}
+							],
+							"name": {
+								"*": "TyC HD"
+							},
+							"resolution": "HD"
+						}
+					]
+				},
+				{
+					"serviceId": "CL_VH1_HD",
+					"name": "VH1 HD",
+					"languages": [
+						"ES"
+					],
+					"relatedMaterials": [
+						{
+							"mediaLocation": "http://staticqbr-cl-prod.vtrprod.cdn.dmdsdp.com/image-service/ImagesEPG/EventImages/VH1_HD.png",
+							"mediaTemplate": "Focused logo"
+						}
+					],
+					"resolution": "HD",
+					"ingestRules": {
+						"eventMatchingPercentage": 95,
+						"regular": [
+							{
+								"ingesterName": "TVA Listings Ingest",
+								"ingestChannel": "1442054439"
+							}
+						]
+					},
+					"publishRules": [
+						{
+							"publisherName": "Pullbased Publisher"
+						},
+						{
+							"publisherName": "Pullbased Publisher",
+							"livestreamId": "LS_CL_VH1_HD"
+						}
+					],
+					"modifierConfiguration": "AV - HD",
+					"livestreams": [
+						{
+							"livestreamId": "LS_CL_VH1_HD",
+							"encodingProfile": "PLATFORM_EOS",
+							"serviceGroupIds": [
+								{
+									"crid": "crid://vtr.tv/LinearTestServiceGroup"
+								}
+							],
+							"name": {
+								"*": "VH1 HD"
+							},
+							"resolution": "HD"
+						}
+					]
+				},
+				{
+					"serviceId": "CL_WarnerChannel_HD",
+					"name": "Warner Channel HD",
+					"languages": [
+						"ES"
+					],
+					"relatedMaterials": [
+						{
+							"mediaLocation": "http://staticqbr-cl-prod.vtrprod.cdn.dmdsdp.com/image-service/ImagesEPG/EventImages/WarnerChannel_HD.png",
+							"mediaTemplate": "Focused logo"
+						}
+					],
+					"resolution": "HD",
+					"ingestRules": {
+						"eventMatchingPercentage": 95,
+						"regular": [
+							{
+								"ingesterName": "TVA Listings Ingest",
+								"ingestChannel": "4861372172"
+							},
+							{
+								"ingesterName": "Catalog Ingester"
+							}
+						]
+					},
+					"publishRules": [
+						{
+							"publisherName": "Pullbased Publisher"
+						},
+						{
+							"publisherName": "Pullbased Publisher",
+							"livestreamId": "LS_CL_WarnerChannel_HD"
+						},
+						{
+							"publisherName": "TSTV - TVA 2 ProdisPA"
+						}
+					],
+					"modifierConfiguration": "AV - HD",
+					"guardTimePreOffset": 300000,
+					"guardTimePostOffset": 300000,
+					"livestreams": [
+						{
+							"livestreamId": "LS_CL_WarnerChannel_HD",
+							"encodingProfile": "PLATFORM_EOS",
+							"serviceGroupIds": [
+								{
+									"crid": "crid://vtr.tv/LinearTestServiceGroup"
+								}
+							],
+							"name": {
+								"*": "Warner Channel HD"
+							},
+							"resolution": "HD"
+						}
+					]
+				},
+				{
+					"serviceId": "CL_Canal13_HD",
+					"name": "Canal 13 HD",
+					"languages": [
+						"ES"
+					],
+					"relatedMaterials": [
+						{
+							"mediaLocation": "http://staticqbr-cl-prod.vtrprod.cdn.dmdsdp.com/image-service/ImagesEPG/EventImages/Canal13_HD.png",
+							"mediaTemplate": "Focused logo"
+						}
+					],
+					"resolution": "HD",
+					"ingestRules": {
+						"eventMatchingPercentage": 95,
+						"regular": [
+							{
+								"ingesterName": "TVA Listings Ingest",
+								"ingestChannel": "69043044"
+							},
+							{
+								"ingesterName": "Catalog Ingester"
+							}
+						]
+					},
+					"publishRules": [
+						{
+							"publisherName": "Pullbased Publisher"
+						},
+						{
+							"publisherName": "Pullbased Publisher",
+							"livestreamId": "LS_CL_Canal13_HD"
+						},
+						{
+							"publisherName": "TSTV - TVA 2 ProdisPA"
+						}
+					],
+					"guardTimePreOffset": 300000,
+					"guardTimePostOffset": 300000,
+					"livestreams": [
+						{
+							"livestreamId": "LS_CL_Canal13_HD",
+							"encodingProfile": "PLATFORM_EOS",
+							"serviceGroupIds": [
+								{
+									"crid": "crid://vtr.tv/LinearTestServiceGroup"
+								}
+							],
+							"name": {
+								"*": "Canal 13 HD"
+							},
+							"resolution": "HD"
+						}
+					]
+				},
+				{
+					"serviceId": "CL_MegaHD",
+					"name": "Mega HD",
+					"languages": [
+						"ES"
+					],
+					"relatedMaterials": [
+						{
+							"mediaLocation": "http://staticqbr-cl-prod.vtrprod.cdn.dmdsdp.com/image-service/ImagesEPG/EventImages/Mega_HD.png",
+							"mediaTemplate": "Focused logo"
+						}
+					],
+					"resolution": "HD",
+					"ingestRules": {
+						"eventMatchingPercentage": 95,
+						"regular": [
+							{
+								"ingesterName": "TVA Listings Ingest",
+								"ingestChannel": "1053663072"
+							}
+						]
+					},
+					"publishRules": [
+						{
+							"publisherName": "Pullbased Publisher"
+						},
+						{
+							"publisherName": "Pullbased Publisher",
+							"livestreamId": "LS_CL_MegaHD"
+						}
+					],
+					"livestreams": [
+						{
+							"livestreamId": "LS_CL_MegaHD",
+							"encodingProfile": "PLATFORM_EOS",
+							"serviceGroupIds": [
+								{
+									"crid": "crid://vtr.tv/LinearTestServiceGroup"
+								}
+							],
+							"name": {
+								"*": "Mega HD"
+							},
+							"resolution": "HD"
+						}
+					]
+				},
+				{
+					"serviceId": "CL_TVN_HD",
+					"name": "TVN HD",
+					"languages": [
+						"ES"
+					],
+					"relatedMaterials": [
+						{
+							"mediaLocation": "http://staticqbr-cl-prod.vtrprod.cdn.dmdsdp.com/image-service/ImagesEPG/EventImages/TVN_HD.png",
+							"mediaTemplate": "Focused logo"
+						}
+					],
+					"resolution": "HD",
+					"ingestRules": {
+						"eventMatchingPercentage": 95,
+						"regular": [
+							{
+								"ingesterName": "TVA Listings Ingest",
+								"ingestChannel": "69039813"
+							}
+						]
+					},
+					"publishRules": [
+						{
+							"publisherName": "Pullbased Publisher"
+						},
+						{
+							"publisherName": "Pullbased Publisher",
+							"livestreamId": "LS_CL_TVN_HD"
+						}
+					],
+					"modifierConfiguration": "AV - HD",
+					"livestreams": [
+						{
+							"livestreamId": "LS_CL_TVN_HD",
+							"encodingProfile": "PLATFORM_EOS",
+							"serviceGroupIds": [
+								{
+									"crid": "crid://vtr.tv/LinearTestServiceGroup"
+								}
+							],
+							"name": {
+								"*": "TVN HD"
+							},
+							"resolution": "HD"
+						}
+					]
+				}
+			],
+			"channelLineups": [
+				{
+					"channelMapGroup": "13",
+					"lineup": [
+						{
+							"serviceId": "CL_13C_HD",
+							"channelNumbers": [
+								737
+							]
+						},
+						{
+							"serviceId": "CL_24Horas_HD",
+							"channelNumbers": [
+								714
+							]
+						},
+						{
+							"serviceId": "CL_AXN_HD",
+							"channelNumbers": [
+								765
+							]
+						},
+						{
+							"serviceId": "CL_Boomerang_HD",
+							"channelNumbers": [
+								725
+							]
+						},
+						{
+							"serviceId": "CL_CartoonNetwork_HD",
+							"channelNumbers": [
+								718
+							]
+						},
+						{
+							"serviceId": "CL_Cinemax_HD",
+							"channelNumbers": [
+								786
+							]
+						},
+						{
+							"serviceId": "CL_DiscoveryChannel_HD",
+							"channelNumbers": [
+								733
+							]
+						},
+						{
+							"serviceId": "CL_Cinecanal_HD",
+							"channelNumbers": [
+								780
+							]
+						},
+						{
+							"serviceId": "CL_CNN_Chile_HD",
+							"channelNumbers": [
+								715
+							]
+						},
+						{
+							"serviceId": "CL_ESPN2_HD",
+							"channelNumbers": [
+								841
+							]
+						},
+						{
+							"serviceId": "CL_ESPN3_HD",
+							"channelNumbers": [
+								842
+							]
+						},
+						{
+							"serviceId": "CL_ESPN_HD",
+							"channelNumbers": [
+								843
+							]
+						},
+						{
+							"serviceId": "CL_Fox_HD",
+							"channelNumbers": [
+								760
+							]
+						},
+						{
+							"serviceId": "CL_FoxLife_HD",
+							"channelNumbers": [
+								749
+							]
+						},
+						{
+							"serviceId": "CL_FX_HD",
+							"channelNumbers": [
+								761
+							]
+						},
+						{
+							"serviceId": "CL_GolTV_HD",
+							"channelNumbers": [
+								845
+							]
+						},
+						{
+							"serviceId": "CL_HBO_HD",
+							"channelNumbers": [
+								790
+							]
+						},
+						{
+							"serviceId": "CL_NationalGeographic_HD",
+							"channelNumbers": [
+								731
+							]
+						},
+						{
+							"serviceId": "CL_Foxactions_HD",
+							"channelNumbers": [
+								812
+							]
+						},
+						{
+							"serviceId": "CL_FoxFamily_HD",
+							"channelNumbers": [
+								811
+							]
+						},
+						{
+							"serviceId": "CL_Space_HD",
+							"channelNumbers": [
+								785
+							]
+						},
+						{
+							"serviceId": "CL_FoxSeries_HD",
+							"channelNumbers": [
+								810
+							]
+						},
+						{
+							"serviceId": "CL_Foxsports1_HD",
+							"channelNumbers": [
+								860
+							]
+						},
+						{
+							"serviceId": "CL_FoxSports2_HD",
+							"channelNumbers": [
+								861
+							]
+						},
+						{
+							"serviceId": "CL_StudioUniversal_HD",
+							"channelNumbers": [
+								788
+							]
+						},
+						{
+							"serviceId": "CL_TNT_HD",
+							"channelNumbers": [
+								781
+							]
+						},
+						{
+							"serviceId": "CL_HBOfamily_HD",
+							"channelNumbers": [
+								802
+							]
+						},
+						{
+							"serviceId": "CL_TNTSeries_HD",
+							"channelNumbers": [
+								768
+							]
+						},
+						{
+							"serviceId": "CL_UniversalChannel_HD",
+							"channelNumbers": [
+								762
+							]
+						},
+						{
+							"serviceId": "CL_Maxprime_HD",
+							"channelNumbers": [
+								805
+							]
+						},
+						{
+							"serviceId": "CL_MTV_HD",
+							"channelNumbers": [
+								754
+							]
+						},
+						{
+							"serviceId": "CL_NatGeoKids_HD",
+							"channelNumbers": [
+								770
+							]
+						},
+						{
+							"serviceId": "CL_Playboy_HD",
+							"channelNumbers": [
+								869
+							]
+						},
+						{
+							"serviceId": "CL_TruTV_HD",
+							"channelNumbers": [
+								738
+							]
+						},
+						{
+							"serviceId": "CL_TyC_HD",
+							"channelNumbers": [
+								846
+							]
+						},
+						{
+							"serviceId": "CL_VH1_HD",
+							"channelNumbers": [
+								757
+							]
+						},
+						{
+							"serviceId": "CL_WarnerChannel_HD",
+							"channelNumbers": [
+								764
+							]
+						},
+						{
+							"serviceId": "CL_Canal13_HD",
+							"channelNumbers": [
+								713
+							]
+						},
+						{
+							"serviceId": "CL_MegaHD",
+							"channelNumbers": [
+								709
+							]
+						},
+						{
+							"serviceId": "CL_TVN_HD",
+							"channelNumbers": [
+								707
+							]
+						}
+					]
+				},
+				{
+					"channelMapGroup": "15",
+					"lineup": [
+						{
+							"serviceId": "CL_13C_HD",
+							"channelNumbers": [
+								737
+							]
+						},
+						{
+							"serviceId": "CL_24Horas_HD",
+							"channelNumbers": [
+								714
+							]
+						},
+						{
+							"serviceId": "CL_AXN_HD",
+							"channelNumbers": [
+								765
+							]
+						},
+						{
+							"serviceId": "CL_Boomerang_HD",
+							"channelNumbers": [
+								725
+							]
+						},
+						{
+							"serviceId": "CL_CartoonNetwork_HD",
+							"channelNumbers": [
+								718
+							]
+						},
+						{
+							"serviceId": "CL_Cinemax_HD",
+							"channelNumbers": [
+								786
+							]
+						},
+						{
+							"serviceId": "CL_DiscoveryChannel_HD",
+							"channelNumbers": [
+								733
+							]
+						},
+						{
+							"serviceId": "CL_Cinecanal_HD",
+							"channelNumbers": [
+								780
+							]
+						},
+						{
+							"serviceId": "CL_CNN_Chile_HD",
+							"channelNumbers": [
+								715
+							]
+						},
+						{
+							"serviceId": "CL_ESPN2_HD",
+							"channelNumbers": [
+								841
+							]
+						},
+						{
+							"serviceId": "CL_ESPN3_HD",
+							"channelNumbers": [
+								842
+							]
+						},
+						{
+							"serviceId": "CL_ESPN_HD",
+							"channelNumbers": [
+								843
+							]
+						},
+						{
+							"serviceId": "CL_Fox_HD",
+							"channelNumbers": [
+								760
+							]
+						},
+						{
+							"serviceId": "CL_FoxLife_HD",
+							"channelNumbers": [
+								749
+							]
+						},
+						{
+							"serviceId": "CL_FX_HD",
+							"channelNumbers": [
+								761
+							]
+						},
+						{
+							"serviceId": "CL_GolTV_HD",
+							"channelNumbers": [
+								845
+							]
+						},
+						{
+							"serviceId": "CL_HBO_HD",
+							"channelNumbers": [
+								790
+							]
+						},
+						{
+							"serviceId": "CL_NationalGeographic_HD",
+							"channelNumbers": [
+								731
+							]
+						},
+						{
+							"serviceId": "CL_Foxactions_HD",
+							"channelNumbers": [
+								812
+							]
+						},
+						{
+							"serviceId": "CL_FoxFamily_HD",
+							"channelNumbers": [
+								811
+							]
+						},
+						{
+							"serviceId": "CL_Space_HD",
+							"channelNumbers": [
+								785
+							]
+						},
+						{
+							"serviceId": "CL_FoxSeries_HD",
+							"channelNumbers": [
+								810
+							]
+						},
+						{
+							"serviceId": "CL_Foxsports1_HD",
+							"channelNumbers": [
+								860
+							]
+						},
+						{
+							"serviceId": "CL_FoxSports2_HD",
+							"channelNumbers": [
+								861
+							]
+						},
+						{
+							"serviceId": "CL_StudioUniversal_HD",
+							"channelNumbers": [
+								788
+							]
+						},
+						{
+							"serviceId": "CL_TNT_HD",
+							"channelNumbers": [
+								781
+							]
+						},
+						{
+							"serviceId": "CL_HBOfamily_HD",
+							"channelNumbers": [
+								802
+							]
+						},
+						{
+							"serviceId": "CL_TNTSeries_HD",
+							"channelNumbers": [
+								768
+							]
+						},
+						{
+							"serviceId": "CL_UniversalChannel_HD",
+							"channelNumbers": [
+								762
+							]
+						},
+						{
+							"serviceId": "CL_Maxprime_HD",
+							"channelNumbers": [
+								805
+							]
+						},
+						{
+							"serviceId": "CL_MTV_HD",
+							"channelNumbers": [
+								754
+							]
+						},
+						{
+							"serviceId": "CL_NatGeoKids_HD",
+							"channelNumbers": [
+								770
+							]
+						},
+						{
+							"serviceId": "CL_Playboy_HD",
+							"channelNumbers": [
+								869
+							]
+						},
+						{
+							"serviceId": "CL_TruTV_HD",
+							"channelNumbers": [
+								738
+							]
+						},
+						{
+							"serviceId": "CL_TyC_HD",
+							"channelNumbers": [
+								846
+							]
+						},
+						{
+							"serviceId": "CL_VH1_HD",
+							"channelNumbers": [
+								757
+							]
+						},
+						{
+							"serviceId": "CL_WarnerChannel_HD",
+							"channelNumbers": [
+								764
+							]
+						},
+						{
+							"serviceId": "CL_Canal13_HD",
+							"channelNumbers": [
+								713
+							]
+						},
+						{
+							"serviceId": "CL_MegaHD",
+							"channelNumbers": [
+								709
+							]
+						}
+					]
+				},
+				{
+					"channelMapGroup": "8",
+					"lineup": []
+				}
+			],
+			"qamLocations": [
+				{
+					"cpeRegion": "Santiago",
+					"locations": [
+						{
+							"livestreamId": "CL_13C_HD",
+							"cpeType": "STB-DVB",
+							"mediaLocation": "tune://schange.com/qam?frequency=802000000&symbol_rate=6952000&modulation=5&fec_inner~0&fec_outer=0&program_number=101"
+						},
+						{
+							"livestreamId": "CL_24Horas_HD",
+							"cpeType": "STB-DVB",
+							"mediaLocation": "tune://schange.com/qam?frequency=794000000&symbol_rate=6952000&modulation=5&fec_inner~0&fec_outer=0&program_number=102"
+						},
+						{
+							"livestreamId": "CL_AXN_HD",
+							"cpeType": "STB-DVB",
+							"mediaLocation": "tune://schange.com/qam?frequency=794000000&symbol_rate=6952000&modulation=5&fec_inner~0&fec_outer=0&program_number=107"
+						},
+						{
+							"livestreamId": "CL_Boomerang_HD",
+							"cpeType": "STB-DVB",
+							"mediaLocation": "tune://schange.com/qam?frequency=794000000&symbol_rate=6952000&modulation=5&fec_inner~0&fec_outer=0&program_number=111"
+						},
+						{
+							"livestreamId": "CL_CartoonNetwork_HD",
+							"cpeType": "STB-DVB",
+							"mediaLocation": "tune://schange.com/qam?frequency=794000000&symbol_rate=6952000&modulation=5&fec_inner~0&fec_outer=0&program_number=113"
+						},
+						{
+							"livestreamId": "CL_Cinemax_HD",
+							"cpeType": "STB-DVB",
+							"mediaLocation": "tune://schange.com/qam?frequency=802000000&symbol_rate=6952000&modulation=5&fec_inner~0&fec_outer=0&program_number=114"
+						},
+						{
+							"livestreamId": "CL_DiscoveryChannel_HD",
+							"cpeType": "STB-DVB",
+							"mediaLocation": "tune://schange.com/qam?frequency=794000000&symbol_rate=6952000&modulation=5&fec_inner~0&fec_outer=0&program_number=116"
+						},
+						{
+							"livestreamId": "CL_Cinecanal_HD",
+							"cpeType": "STB-DVB",
+							"mediaLocation": "tune://schange.com/qam?frequency=794000000&symbol_rate=6952000&modulation=5&fec_inner~0&fec_outer=0&program_number=118"
+						},
+						{
+							"livestreamId": "CL_CNN_Chile_HD",
+							"cpeType": "STB-DVB",
+							"mediaLocation": "tune://schange.com/qam?frequency=802000000&symbol_rate=6952000&modulation=5&fec_inner~0&fec_outer=0&program_number=122"
+						},
+						{
+							"livestreamId": "CL_ESPN2_HD",
+							"cpeType": "STB-DVB",
+							"mediaLocation": "tune://schange.com/qam?frequency=794000000&symbol_rate=6952000&modulation=5&fec_inner~0&fec_outer=0&program_number=125"
+						},
+						{
+							"livestreamId": "CL_ESPN3_HD",
+							"cpeType": "STB-DVB",
+							"mediaLocation": "tune://schange.com/qam?frequency=794000000&symbol_rate=6952000&modulation=5&fec_inner~0&fec_outer=0&program_number=126"
+						},
+						{
+							"livestreamId": "CL_ESPN_HD",
+							"cpeType": "STB-DVB",
+							"mediaLocation": "tune://schange.com/qam?frequency=794000000&symbol_rate=6952000&modulation=5&fec_inner~0&fec_outer=0&program_number=127"
+						},
+						{
+							"livestreamId": "CL_Fox_HD",
+							"cpeType": "STB-DVB",
+							"mediaLocation": "tune://schange.com/qam?frequency=794000000&symbol_rate=6952000&modulation=5&fec_inner~0&fec_outer=0&program_number=133"
+						},
+						{
+							"livestreamId": "CL_FoxLife_HD",
+							"cpeType": "STB-DVB",
+							"mediaLocation": "tune://schange.com/qam?frequency=802000000&symbol_rate=6952000&modulation=5&fec_inner~0&fec_outer=0&program_number=134"
+						},
+						{
+							"livestreamId": "CL_FX_HD",
+							"cpeType": "STB-DVB",
+							"mediaLocation": "tune://schange.com/qam?frequency=802000000&symbol_rate=6952000&modulation=5&fec_inner~0&fec_outer=0&program_number=135"
+						},
+						{
+							"livestreamId": "CL_GolTV_HD",
+							"cpeType": "STB-DVB",
+							"mediaLocation": "tune://schange.com/qam?frequency=802000000&symbol_rate=6952000&modulation=5&fec_inner~0&fec_outer=0&program_number=137"
+						},
+						{
+							"livestreamId": "CL_HBO_HD",
+							"cpeType": "STB-DVB",
+							"mediaLocation": "tune://schange.com/qam?frequency=802000000&symbol_rate=6952000&modulation=5&fec_inner~0&fec_outer=0&program_number=139"
+						},
+						{
+							"livestreamId": "CL_NationalGeographic_HD",
+							"cpeType": "STB-DVB",
+							"mediaLocation": "tune://schange.com/qam?frequency=802000000&symbol_rate=6952000&modulation=5&fec_inner~0&fec_outer=0&program_number=147"
+						},
+						{
+							"livestreamId": "CL_Foxactions_HD",
+							"cpeType": "STB-DVB",
+							"mediaLocation": "tune://schange.com/qam?frequency=802000000&symbol_rate=6952000&modulation=5&fec_inner~0&fec_outer=0&program_number=150"
+						},
+						{
+							"livestreamId": "CL_FoxFamily_HD",
+							"cpeType": "STB-DVB",
+							"mediaLocation": "tune://schange.com/qam?frequency=802000000&symbol_rate=6952000&modulation=5&fec_inner~0&fec_outer=0&program_number=152"
+						},
+						{
+							"livestreamId": "CL_Space_HD",
+							"cpeType": "STB-DVB",
+							"mediaLocation": "tune://schange.com/qam?frequency=794000000&symbol_rate=6952000&modulation=5&fec_inner~0&fec_outer=0&program_number=155"
+						},
+						{
+							"livestreamId": "CL_FoxSeries_HD",
+							"cpeType": "STB-DVB",
+							"mediaLocation": "tune://schange.com/qam?frequency=802000000&symbol_rate=6952000&modulation=5&fec_inner~0&fec_outer=0&program_number=156"
+						},
+						{
+							"livestreamId": "CL_Foxsports1_HD",
+							"cpeType": "STB-DVB",
+							"mediaLocation": "tune://schange.com/qam?frequency=802000000&symbol_rate=6952000&modulation=5&fec_inner~0&fec_outer=0&program_number=158"
+						},
+						{
+							"livestreamId": "CL_FoxSports2_HD",
+							"cpeType": "STB-DVB",
+							"mediaLocation": "tune://schange.com/qam?frequency=802000000&symbol_rate=6952000&modulation=5&fec_inner~0&fec_outer=0&program_number=159"
+						},
+						{
+							"livestreamId": "CL_StudioUniversal_HD",
+							"cpeType": "STB-DVB",
+							"mediaLocation": "tune://schange.com/qam?frequency=794000000&symbol_rate=6952000&modulation=5&fec_inner~0&fec_outer=0&program_number=161"
+						},
+						{
+							"livestreamId": "CL_TNT_HD",
+							"cpeType": "STB-DVB",
+							"mediaLocation": "tune://schange.com/qam?frequency=794000000&symbol_rate=6952000&modulation=5&fec_inner~0&fec_outer=0&program_number=164"
+						},
+						{
+							"livestreamId": "CL_HBOfamily_HD",
+							"cpeType": "STB-DVB",
+							"mediaLocation": "tune://schange.com/qam?frequency=802000000&symbol_rate=6952000&modulation=5&fec_inner~0&fec_outer=0&program_number=165"
+						},
+						{
+							"livestreamId": "CL_TNTSeries_HD",
+							"cpeType": "STB-DVB",
+							"mediaLocation": "tune://schange.com/qam?frequency=802000000&symbol_rate=6952000&modulation=5&fec_inner~0&fec_outer=0&program_number=166"
+						},
+						{
+							"livestreamId": "CL_UniversalChannel_HD",
+							"cpeType": "STB-DVB",
+							"mediaLocation": "tune://schange.com/qam?frequency=802000000&symbol_rate=6952000&modulation=5&fec_inner~0&fec_outer=0&program_number=169"
+						},
+						{
+							"livestreamId": "CL_Maxprime_HD",
+							"cpeType": "STB-DVB",
+							"mediaLocation": "tune://schange.com/qam?frequency=802000000&symbol_rate=6952000&modulation=5&fec_inner~0&fec_outer=0&program_number=170"
+						},
+						{
+							"livestreamId": "CL_MTV_HD",
+							"cpeType": "STB-DVB",
+							"mediaLocation": "tune://schange.com/qam?frequency=802000000&symbol_rate=6952000&modulation=5&fec_inner~0&fec_outer=0&program_number=171"
+						},
+						{
+							"livestreamId": "CL_NatGeoKids_HD",
+							"cpeType": "STB-DVB",
+							"mediaLocation": "tune://schange.com/qam?frequency=794000000&symbol_rate=6952000&modulation=5&fec_inner~0&fec_outer=0&program_number=173"
+						},
+						{
+							"livestreamId": "CL_Playboy_HD",
+							"cpeType": "STB-DVB",
+							"mediaLocation": "tune://schange.com/qam?frequency=794000000&symbol_rate=6952000&modulation=5&fec_inner~0&fec_outer=0&program_number=174"
+						},
+						{
+							"livestreamId": "CL_TruTV_HD",
+							"cpeType": "STB-DVB",
+							"mediaLocation": "tune://schange.com/qam?frequency=794000000&symbol_rate=6952000&modulation=5&fec_inner~0&fec_outer=0&program_number=178"
+						},
+						{
+							"livestreamId": "CL_TyC_HD",
+							"cpeType": "STB-DVB",
+							"mediaLocation": "tune://schange.com/qam?frequency=794000000&symbol_rate=6952000&modulation=5&fec_inner~0&fec_outer=0&program_number=180"
+						},
+						{
+							"livestreamId": "CL_VH1_HD",
+							"cpeType": "STB-DVB",
+							"mediaLocation": "tune://schange.com/qam?frequency=794000000&symbol_rate=6952000&modulation=5&fec_inner~0&fec_outer=0&program_number=181"
+						},
+						{
+							"livestreamId": "CL_WarnerChannel_HD",
+							"cpeType": "STB-DVB",
+							"mediaLocation": "tune://schange.com/qam?frequency=802000000&symbol_rate=6952000&modulation=5&fec_inner~0&fec_outer=0&program_number=182"
+						},
+						{
+							"livestreamId": "CL_Canal13_HD",
+							"cpeType": "STB-DVB",
+							"mediaLocation": "tune://schange.com/qam?frequency=794000000&symbol_rate=6952000&modulation=5&fec_inner~0&fec_outer=0&program_number=241"
+						},
+						{
+							"livestreamId": "CL_MegaHD",
+							"cpeType": "STB-DVB",
+							"mediaLocation": "tune://schange.com/qam?frequency=802000000&symbol_rate=6952000&modulation=5&fec_inner~0&fec_outer=0&program_number=245"
+						},
+						{
+							"livestreamId": "CL_TVN_HD",
+							"cpeType": "STB-DVB",
+							"mediaLocation": "tune://schange.com/qam?frequency=794000000&symbol_rate=6952000&modulation=5&fec_inner~0&fec_outer=0&program_number=168"
+						}
+					]
+				}
+			],
+			"ipLocations": [
+				{
+					"contentLocations": [
+						{
+							"cpeType": "STB-DVB",
+							"cdnPoolId": "*",
+							"encodingProfile": "ABR_265",
+							"mediaLocation": "http://{/shared/deployment/endpoints/5J_VodServer}/shls/{{AssetId}}/9.m3u8?device=RDK-TSTV-ABR"
+						},
+						{
+							"cpeType": "STB-DVB",
+							"cdnPoolId": "*",
+							"encodingProfile": "HEVC-2160p50-STB",
+							"mediaLocation": "http://{/shared/deployment/endpoints/5J_VodServer}/sdash/{ProgramUrl}/index.mpd/Manifest?device=HEVC-STB"
+						},
+						{
+							"cpeType": "STB-DVB",
+							"cdnPoolId": "*",
+							"encodingProfile": "Only_4K_layer_p50",
+							"mediaLocation": "http://{/shared/deployment/endpoints/5J_VodServer}/sdash/{ProgramUrl}/index.mpd/Manifest?device=HEVC-STB"
+						},
+						{
+							"cpeType": "STB-DVB",
+							"cdnPoolId": "*",
+							"encodingProfile": "HEVC-2160p25-STB",
+							"mediaLocation": "http://{/shared/deployment/endpoints/5J_VodServer}/sdash/{ProgramUrl}/index.mpd/Manifest?device=HEVC-STB"
+						},
+						{
+							"cpeType": "STB-DVB",
+							"cdnPoolId": "*",
+							"encodingProfile": "Only_4K_layer_p25",
+							"mediaLocation": "http://{/shared/deployment/endpoints/5J_VodServer}/sdash/{ProgramUrl}/index.mpd/Manifest?device=HEVC-STB"
+						},
+						{
+							"cpeType": "STB-DVB",
+							"cdnPoolId": "*",
+							"encodingProfile": "HEVC-1080i25-STB",
+							"mediaLocation": "http://{/shared/deployment/endpoints/5J_VodServer}/sdash/{ProgramUrl}/index.mpd/Manifest?device=HEVC-STB"
+						},
+						{
+							"cpeType": "STB-DVB",
+							"cdnPoolId": "*",
+							"encodingProfile": "HEVC-720p50-STB",
+							"mediaLocation": "http://{/shared/deployment/endpoints/5J_VodServer}/sdash/{ProgramUrl}/index.mpd/Manifest?device=HEVC-STB"
+						},
+						{
+							"cpeType": "STB-DVB",
+							"cdnPoolId": "*",
+							"encodingProfile": "HEVC-576i25-STB",
+							"mediaLocation": "http://{/shared/deployment/endpoints/5J_VodServer}/sdash/{ProgramUrl}/index.mpd/Manifest?device=HEVC-STB"
+						},
+						{
+							"cpeType": "STB-DVB",
+							"cdnPoolId": "*",
+							"encodingProfile": "HEVC-1080p25-STB",
+							"mediaLocation": "http://{/shared/deployment/endpoints/5J_VodServer}/sdash/{ProgramUrl}/index.mpd/Manifest?device=HEVC-STB"
+						},
+						{
+							"cpeType": "STB-DVB",
+							"cdnPoolId": "*",
+							"encodingProfile": "HEVC-576p25-STB",
+							"mediaLocation": "http://{/shared/deployment/endpoints/5J_VodServer}/sdash/{ProgramUrl}/index.mpd/Manifest?device=HEVC-STB"
+						},
+						{
+							"cpeType": "STB-DVB",
+							"cdnPoolId": "*",
+							"encodingProfile": "HEVC-480i30-STB",
+							"mediaLocation": "http://{/shared/deployment/endpoints/5J_VodServer}/sdash/{ProgramUrl}/index.mpd/Manifest?device=HEVC-STB"
+						},
+						{
+							"cpeType": "STB-DVB",
+							"cdnPoolId": "*",
+							"encodingProfile": "HEVC-480p30-STB",
+							"mediaLocation": "http://{/shared/deployment/endpoints/5J_VodServer}/sdash/{ProgramUrl}/index.mpd/Manifest?device=HEVC-STB"
+						},
+						{
+							"cpeType": "Orion",
+							"cdnPoolId": "*",
+							"encodingProfile": "AVC-1080p-OTT",
+							"mediaLocation": "http://{/shared/deployment/endpoints/5J_VodServer}/DefaultVodService/{{AssetId}}/index.m3u8"
+						},
+						{
+							"cpeType": "Orion",
+							"cdnPoolId": "*",
+							"encodingProfile": "AVC-720p-OTT",
+							"mediaLocation": "http://{/shared/deployment/endpoints/5J_VodServer}/DefaultVodService/{{AssetId}}/index.m3u8"
+						},
+						{
+							"cpeType": "Orion",
+							"cdnPoolId": "*",
+							"encodingProfile": "AVC-SD169-OTT",
+							"mediaLocation": "http://{/shared/deployment/endpoints/5J_VodServer}/DefaultVodService/{{AssetId}}/index.m3u8"
+						},
+						{
+							"cpeType": "Orion",
+							"cdnPoolId": "*",
+							"encodingProfile": "AVC-SD43-OTT",
+							"mediaLocation": "http://{/shared/deployment/endpoints/5J_VodServer}/DefaultVodService/{{AssetId}}/index.m3u8"
+						},
+						{
+							"cpeType": "Orion",
+							"cdnPoolId": "*",
+							"encodingProfile": "AVC-SD169_NTSC-OTT",
+							"mediaLocation": "http://{/shared/deployment/endpoints/5J_VodServer}/DefaultVodService/{{AssetId}}/index.m3u8"
+						},
+						{
+							"cpeType": "Orion",
+							"cdnPoolId": "*",
+							"encodingProfile": "AVC-SD43_NTSC-OTT",
+							"mediaLocation": "http://{/shared/deployment/endpoints/5J_VodServer}/DefaultVodService/{{AssetId}}/index.m3u8"
+						}
+					]
+				}
+			],
+			"multiScreen": {
+				"cpeTypes": [
+					{
+						"cpeTypeTag": "STB-DVB",
+						"supportedEncodingProfiles": [
+							"ABR_265",
+							"PLATFORM_EOS",
+							"HEVC-2160p50-STB",
+							"Only_4K_layer_p25",
+							"Only_4K_layer_p50",
+							"HEVC-2160p25-STB",
+							"HEVC-1080i25-STB",
+							"HEVC-1080p25-STB",
+							"HEVC-720p50-STB",
+							"HEVC-576i25-STB",
+							"HEVC-576p25-STB",
+							"HEVC-480i30-STB",
+							"HEVC-480p30-STB"
+						]
+					},
+					{
+						"cpeTypeTag": "Orion",
+						"supportedEncodingProfiles": [
+							"AVC-1080p-OTT",
+							"AVC-720p-OTT",
+							"AVC-SD169-OTT",
+							"AVC-SD43-OTT",
+							"AVC-SD169_NTSC-OTT",
+							"AVC-SD43_NTSC-OTT"
+						]
+					}
+				],
+				"userAgentMapping": [
+					{
+						"uaRegEx": "TNT.*",
+						"context": "Dawn",
+						"cpeType": "STB-DVB"
+					},
+					{
+						"uaRegEx": "Orion OESP.*",
+						"context": "Dawn",
+						"cpeType": "Orion"
+					},
+					{
+						"uaRegEx": ".*EOSSTB.*",
+						"context": "Dawn",
+						"cpeType": "STB-DVB"
+					}
+				],
+				"defaultContext": "Dawn",
+				"defaultCpeType": "STB-DVB"
+			}
+		}
+	},
+	"prodis_pa": {},
+	"prodis_reporting": {},
+	"prodis_crm": {}
+}

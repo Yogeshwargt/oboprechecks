@@ -1,0 +1,5 @@
+changes from CL_FlatFile_Aug15_4-11_v3.xlsx to CL_FlatFile_Aug15_4-11_v4.xlsx
+
+1. Netflix channel was added in the last row of CL-OFT-Channels
+2. LCNs for Santiago city was added in column AN of CL-OFT-Channels. 60 linear channels + Netflix
+3. TSTV prod rule CU-SPC-HD-none-0h-1d duplicated previously was removed.

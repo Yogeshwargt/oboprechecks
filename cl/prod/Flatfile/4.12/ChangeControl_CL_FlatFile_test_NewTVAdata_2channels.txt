@@ -1,6 +1,0 @@
-There is a request for new 10G through the ticket https://jira.lgi.io/browse/CCL-549
- 
-On the 10G, you will see
-2 Channels are added (CL_Universal_Channel_HD_test and CL_FX_HD_test) – their lineups and tuning parameters
-EPG source id is changed for  “CL_Universal_Channel_HD”
-Lineup removed for “CL_Netflix”

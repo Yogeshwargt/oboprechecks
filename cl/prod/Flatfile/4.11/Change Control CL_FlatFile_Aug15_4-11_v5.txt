@@ -1,1 +1,0 @@
-1. just the frequencies for Los Andes city was changed. Column BP in tab CL-OFT-Channels
